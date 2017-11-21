@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口 一定要写接口全路径否则 org.apache.ibatis.binding.BindingException -->
+<mapper namespace="com.Stream.dao.NoticeDao">
+	
+	<resultMap type="Notic" id="NoticeMap">
+		<id property="noticId" column="notic_id" />
+		<result property="noticName" column="notic_name" />
+		<result property="noticUser" column="notic_user" />
+		<result property="noticContent" column="notic_content" />
+		<result property="noticImg" column="notic_img" />
+		<result property="noticDate" column="notic_date" />
+	</resultMap>
+	<select id="selectList" parameterType="Notic" resultMap="NoticeMap">
+		select
+		n.notic_id,n.notic_name,n.notic_user,n.notic_content,n.notic_img,n.notic_date
+		from lol_notic n
+	</select>
+	<sql id="notic">
+		n.notic_id,n.notic_name,n.notic_user,n.notic_content,n.notic_img,n.notic_date
+	</sql>
+	<sql id="hero">
+		h.hid,h.hname,h.title1,h.title2,h.img,h.comm
+	</sql>
+	<sql id="skill">
+		s.sid,s.sname,s.stitle,s.simg
+	</sql>
+	<sql id="lo">
+		lo.noid,lo.nonames,lo.nocont,lo.noimg
+	</sql>
+	<sql id="oo">
+		oo.oid,oo.oname,oo.ostatus,oo.oimg,oo.ocont,oo.ocomen
+	</sql>
+	<resultMap type="Notic" id="NoticMap">
+		<id property="noticId" column="notic_id" />
+		<result property="noticName" column="notic_name" />
+		<result property="noticUser" column="notic_user" />
+		<result property="noticContent" column="notic_content" />
+		<result property="noticImg" column="notic_img" />
+		<result property="noticDate" column="notic_date" />
+		<collection property="noticHeros" ofType="com.Stream.entity.NoticHero"
+			column="noticid">
+			<id property="id" column="hid" />
+			<result property="names" column="hname" />
+			<result property="title1" column="title1" />
+			<result property="title2" column="title2" />
+			<result property="img" column="img" />
+			<result property="comen" column="comm" />
+			<collection property="noticSkills" ofType="com.Stream.entity.NoticSkill"
+			column="noticheroid">
+			<id property="id" column="sid" />
+			<result property="names" column="sname" />
+			<result property="title1" column="stitle" />
+			<result property="img" column="simg" />
+			</collection>
+		</collection>
+		<collection property="noticOs" ofType="com.Stream.entity.NoticO"
+			column="noticid">
+			<id property="id" column="noid" />
+			<result property="names" column="nonames" />
+			<result property="cont" column="nocont" />
+			<result property="img" column="noimg" />
+		</collection>
+		<collection property="noticOos" ofType="com.Stream.entity.NoticOo"
+			column="noticid">
+			<id property="id" column="oid" />
+			<result property="names" column="oname" />
+			<result property="status" column="ostatus" />
+			<result property="img" column="oimg" />
+			<result property="cont" column="ocont" />
+			<result property="comen" column="ocomen" />
+		</collection>
+	</resultMap>
+	<select id="selectById" parameterType="Notic" resultMap="NoticMap">
+          select <include refid="notic"/>,<include refid="hero"/>,
+          <include refid="skill"/>,<include refid="lo"/>,<include refid="oo"/>
+          from lol_notic n left join lol_notichero h on n.notic_id=h.noticid
+          left join lol_noskill s on h.hid=s.noticheroid 
+          left join lol_noticlo lo on n.notic_id=lo.noticid
+          left join lol_noticoo oo on n.notic_id=oo.noticid
+          where n.notic_id=#{noticId}
+	</select>
+	<select id="count" parameterType="Notic" resultType="int">
+	  select count(*) from lol_notic n
+	</select>
+</mapper>

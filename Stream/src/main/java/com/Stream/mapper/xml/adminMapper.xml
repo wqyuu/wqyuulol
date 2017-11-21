@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口  一定要写接口全路径否则  org.apache.ibatis.binding.BindingException-->
+<mapper namespace="com.Stream.dao.AdminDao">
+	
+	<select id="selectByName" parameterType="Admin" resultType="Admin">
+	   select a.aid,a.aname,a.apass from st_admin a where a.aname=#{Name} 
+	</select>
+</mapper>

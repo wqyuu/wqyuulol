@@ -1,0 +1,500 @@
+@charset "utf-8";
+
+/*top*/
+.topbar{height:75px;}
+
+/*左侧*/
+.mainshop{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/list/leftxian.jpg) repeat-y; color:#000; height:auto; margin-top:20px; 
+margin-bottom:20px; border-bottom:2px solid #e8e7e7;}
+.mululogin{ padding-top:20px; padding-right:20px; color:#555; line-height:20px;}
+.mululogin a{color:#fa322c; border:1px solid #fa322c; padding:3px 8px; line-height:24px; background:#FFF;}
+.buybar{width:1190px; margin:0px auto; height:auto; padding-top:20px; position:relative;}
+.menu_buy1{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) no-repeat; height:60px; width:621px;}
+.menu_buy2{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -61px no-repeat; height:60px; width:621px;}
+
+.buyleft{width:880px; }
+.buyshop{margin-bottom:40px;}
+.buyli{width:880px; }
+.buyli li{float:left;}
+.buyli li.li_inp{ width:60px;}
+.buyli li.li_sp{ width:348px;}
+.buyli li.li_dj{ width:110px;}
+.buyli li.li_sl{ width:152px;}
+.buyli li.li_jg{ width:80px;}
+.buyli li.li_zz{ width:130px;}
+
+.buytop{ height:43px; background:#efefef; color:#000; }
+.buytop li{line-height:43px; text-align:center; font-size:14px;}
+.buytop li.li_sp{ width:348px; text-align:left; }
+
+.buy_jix{height:43px; background:#fff; color:#000; border-bottom:1px solid #e2e2e2;}
+.buy_jix li.li_sp a{line-height:43px; color:#ed3029; font-size:14px;}
+.buy_jix li.li_sp a:hover{color:#ed3029; text-decoration:underline;}
+.buy_jix li.li_sp{ width:348px;}
+.buy_jix li.li_dj{ width:80px;}
+.buy_jix li.li_zz a{line-height:43px; height:43px; display:block; color:#999; font-size:12px; text-indent:44px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/delete.jpg) no-repeat 28px center;}
+.buy_jix li.li_zz a:hover{color:#ed3029; text-decoration:underline;}
+
+.buylist{border-bottom:1px solid #e2e2e2;}
+.buylistbr{border-color:#666;}
+.buyli li.li_inp{width:60px;}
+.buylist li{text-align:center;}
+.buylist li.li_sp{text-align:left; width:348px; height:106px; padding-top:14px;}
+
+
+.buylist li.li_sl{padding-top:44px;}
+.buylist li.li_dj{padding-top:48px;}
+.buylist li.li_dj_zh{padding-top:36px;}
+.buylist li.li_jg{padding-top:48px; color:#666;}
+.buylist li.li_jg_zh{padding-top:36px; color:#666;}
+.buylist li.li_zz{padding-top:48px;}
+.buysl{ width:90px; margin:0px auto;}
+.buy_inp{height:26px; line-height:26px; width:48px; font-size:14px; text-align:center; border:0px; border-top:1px solid #cacaca; border-bottom:1px solid #cacaca; vertical-align: middle; padding:0px; margin:0px; float:left;}
+.buysl a{padding:0px; margin:0px;  float:left; display:block; width:20px; height:28px; background:#e7e7e7;}
+.buysl a.sum0{padding:0px; margin:0px;  float:left; display:block; width:18px; height:26px; border:1px solid #cacaca; background:#e7e7e7;}
+.buysl a.sum0 img{display:none;}
+.buysl a img{padding:0px; margin:0px;}
+.buyzp{border-bottom:1px solid #e2e2e2; padding-bottom:6px;}
+.buyzp ul{color:#333;}
+.buyzp ul li{ text-align:center; color:#666; line-height:22px;}
+.buyzp ul li.li_sp{text-align:left;}
+.buyzp ul li a{ color:#666;}
+
+.buy_xuanhover{width:60px; height:43px; line-height:43px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_inphoer.jpg) no-repeat 6px center; text-indent:26px; text-align:left;}
+.buy_xuan{width:60px; height:43px; line-height:43px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_inphui.jpg) no-repeat 6px center; text-indent:26px; text-align:left;}
+.buy_dianhover{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_inphoer.jpg) no-repeat 10px center; width:60px; height:40px; margin-top:32px; text-indent:30px; text-align:left;}
+.buy_dian{width:60px; height:40px; margin-top:32px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_inphui.jpg) no-repeat 10px center; text-indent:30px; text-align:left;}
+.buy_diannull{width:60px; height:40px;}
+.buy_radio{margin-left:15px;width:13px; height:13px; margin-top:50px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_radio.png) no-repeat;background-position:-5px -3px;}
+.buy_radiohover{margin-left:15px;width:13px; height:13px; margin-top:50px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/member/buy_radio.png) no-repeat;background-position:-5px -28px;}
+.buyxgbar{height:44px; line-height:44px; text-indent:12px; background:#efefef; color:#000; font-size:14px;}
+.buyxgno{height:44px; line-height:44px; text-align:center; background:#efefef; color:#000; font-size:14px; padding:134px 0px; margin-bottom:20px;}
+.buyxgno a{color:#ed302a; text-decoration:underline;}
+.buyxgno a:hover{ color:#C00;}
+.buy_disable{opacity: 0.6;filter:alpha(opacity=60);}
+
+
+/*618组合提示*/
+.zuhe_bar{ width:100%; height:28px; line-height:28px; border-bottom:1px solid #eaeaea; background:#fffdee; padding-top:8px; padding-bottom:8px; position:relative;}
+.zuhe_font{float:left; text-indent:10px;}
+.zuhe_fontzh{float:left; text-indent:100px;}
+.zuhe_link{float:left; margin-left:20px; border:1px solid #ed3029; line-height:26px; padding:0px 16px; color:#ed3029; color:#ed3029; display:block; border-radius:6px;}
+.zuhe_tip_85zhe{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_tip.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+.zuhe_tip_75zhe{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_75tip.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+.zuhe_tip{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_tip.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+.zuhe_xian{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_xian.png) no-repeat 0 0; position:absolute; top:35px; left:42px; width:18px; height:188px;}
+.zuhe_tip_9zhe{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_tip2.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+.zuhe_tip_90zhe{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_tip.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+.zuhe_tip_80zhe{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zuhe_80tip.png) no-repeat 0 0; position:absolute; top:9px; left:10px; width:74px; height:27px;}
+
+
+/*相关商品*/
+.buyxgshop{width:880px; overflow:hidden; height:246px;}
+.hotshopxg{width:900px; padding-bottom:0px; height:246px; overflow:hidden; padding-top:12px; }
+.hotshopxg li{width:150px; float:left;}
+.hotshopxg li a.leftimg{width:128px; height:128px;  display:block;}
+.hotshopxg li a.leftimg:hover{}
+.hotshopxg li a.leftimg img{width:128px; height:128px;} 
+.hotshopxg div.wen{width:128px; height:80px; overflow:hidden;}
+.hotshopxg_gz{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/base/index.jpg) no-repeat -623px -54px; text-indent:14px; color:#9a9a9a;}
+.hotshopxg_wen{ height:20px; line-height:20px; overflow:hidden; display:block; color:#666;}
+a.hotshopxg_wen:hover{color:#333;}
+.hotshoplink{display:block; padding:2px 8px; line-height:18px; margin-right:30px; color:#F00; border:1px solid #ed302a; float:left; margin-top:4px;}
+.hotshoplink:hover{text-decoration:none; color:#C00; border:1px solid #C00;}
+
+.buysp{}
+.buysp img{ width:88px; height:88px; float:left; display:block; margin-right:10px;}
+.buysp_wen{height:96px; width:210px; color:#666; line-height:20px;}
+.buysp_wen a{line-height:24px; color:#333; font-size:14px; display:block; height:24px; overflow:hidden;}
+.buysp_wen span{ display:block;}
+.buysp_wen font.buyjia{ line-height:17px; height:17px; color:#fff; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jia.jpg) no-repeat #ed3029; padding:0px 6px 0px 8px; font-family: "微软雅黑","宋体";}
+
+
+/*右侧信息*/
+.buyrightbar{width:276px;}
+.buyright{width:274px;  border:1px #bababa solid; border-top:3px #fa322c solid; padding-bottom:4px; background:#efefef;}
+.buyrightpos{position:absolute; bottom:0px; right:0px;}
+.buyright h3{ line-height:42px; height:42px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -124px no-repeat #efefef; font-weight:normal; text-indent:34px;}
+.buybai{background:#FFF; width:266px; margin:0px auto; height:auto;}
+/*.buybottom{border-bottom:1px #efefef solid}*/
+.buybottom span.buytit{ text-align:center; display:block; padding-top:2px; line-height:26px; font-size:14px; color:#333; font-weight:bolder;}
+.buy_youf{width:240px; padding:10px 13px; line-height:26px;}
+.buy_youf a{ color:#FFF; text-decoration:underline; padding-left:22px;}
+.buy_you1{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -173px no-repeat; width:152px; height:26px; line-height:26px; padding-top:4px;}
+.buy_you2{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -205px no-repeat; width:152px; height:26px; line-height:26px; padding-top:4px;}
+.buy_wen{width:240px; padding:10px 13px; line-height:26px; color:#666; font-size:14px;}
+.buy_wen2{width:240px; padding:10px 13px; line-height:26px; color:#666; font-size:14px;}
+
+a.buy_bot{width:240px; height:46px; line-height:46px; color:#FFF; display:block; background:#ed3029; font-size:18px; text-align:center;}
+a.buy_bot_small{width:120px; height:35px; line-height:35px; color:#FFF; display:block; background:#ed3029; font-size:14px; text-align:center;}
+
+a.buy_bot:hover,a.buy_bot_small:hover{ background:#f1110f;  line-height:35px; color:#FFF; text-decoration:none;}
+a.buy_bot:hover{line-height: 46px;}
+a.buy_bothui{width:240px; height:46px; line-height:46px; color:#999; display:block; background:#666; font-size:18px; text-align:center; cursor:inherit;}
+a.buy_bothui:hover{ background:#666;  line-height:46px; color:#999; text-decoration:none;}
+
+.buy_baoz{font-size:12px; padding-top:0px;}
+.buy_baozleft{font-size:12px; line-height:60px; width:60px; text-align:center;}
+.buy_baozright{ line-height:20px; border-left:1px #e3e1e1 solid; padding-left:10px; padding-top:2px; padding-bottom:2px;}
+
+/*智能浮动*/
+.navBox_1{width:274px;  border:1px #bababa solid; border-top:3px #fa322c solid; padding-bottom:4px; background:#efefef; float:right;}
+.navBox_3{width:274px;  border:1px #bababa solid; border-top:3px #fa322c solid; padding-bottom:4px; background:#efefef; position:absolute; bottom:0px; right:0px;}
+.navBox_3 h3{ line-height:42px; height:42px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -124px no-repeat #efefef; font-weight:normal; text-indent:34px;}
+
+
+.navBox_1 h3{ line-height:42px; height:42px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -124px no-repeat #efefef; font-weight:normal; text-indent:34px;}
+.navBox_2 h3{ line-height:42px; height:42px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -124px no-repeat #efefef; font-weight:normal; text-indent:34px;}
+.navBox_2{
+	width:274px;  border:1px #bababa solid; border-top:3px #fa322c solid; padding-bottom:4px; background:#efefef;
+	z-index:998;
+	position:fixed;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop));}
+.navBox_4 h3{ line-height:42px; height:42px;  background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) left -124px no-repeat #efefef; font-weight:normal; text-indent:34px;}
+.navBox_4{
+	width:274px;  border:1px #bababa solid; border-top:3px #fa322c solid; padding-bottom:4px; background:#efefef;
+	z-index:998;
+	position:absolute;
+	bottom: 0;
+	/*_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop));}*/
+	}
+	
+.buyadd_bar{width:878px; border:1px solid #efefef;}
+.buyadd_top{height:43px; line-height:43px; font-size:14px; background:#efefef; color:#000; text-indent:10px;}
+
+/*地址*/
+.gwc_addlist{ padding:16px 0px 16px 16px;}
+.gwc_addlist li{width:258px; margin-bottom:16px; float:left; margin-right:14px; cursor:pointer;}
+.gwc_addk{display:block; width:234px; height:98px;  border:2px solid #d6d6d6; padding:6px 10px 10px 10px; color:#666; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hoverhui.jpg) no-repeat  right bottom;}
+.gwc_addlist li.gwc_add{margin-right:0px;}
+.gwc_addk2{width:234px; height:98px;  border:2px solid #d6d6d6; padding:6px 10px 10px 10px; color:#666;}
+.gwc_addlist li.click .gwc_addk{display:block; width:234px; height:98px;  padding:6px 10px 10px 10px;
+background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hover.jpg) no-repeat  right bottom;  border:2px solid #fa322c; color:#000;}
+.addclick{ color:#666; text-decoration:underline; font-weight:normal;}
+.addclick:hover{ color:#000; text-decoration:underline;}
+.gwc_addk2 a.jiaadd{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) no-repeat -318px -210px; display:block; text-indent:26px; font-weight:bolder;
+color:#f4343b; font-size:14px; line-height:26px; margin:36px 0px 0px 60px;}
+.gwc_newadd{width:880px; background:#fff; height:auto; margin:10px auto 26px auto;}
+.gwc_newadd table{width:880px;}
+.gwc_newadd table td{line-height:36px;}
+.gwc_newadd table td.left{ text-align:right; padding-right:5px; color:#333; width:96px;}
+.gwc_addktab div.addname{ width:60px; overflow:hidden; height:26px; line-height:26px;}
+.gew_inp{padding:3px; height:18px; line-height:18px; color:#000; border-top:1px solid #999999; border-left:1px solid #999999; border-right:1px solid #c0c0c0; border-bottom:1px solid #c0c0c0; vertical-align:middle;}
+.gwc_newadd select{border:1px solid #c0c0c0; padding:2px; line-height:22px; height:22px; width:100px; display:inline-block; overflow:hidden;}
+
+.inpw160{width:160px;}
+.inpw140{width:150px;}
+.inpw80{width:80px;}
+.inpw100{width:100px;}
+.inpw50{width:50px;}
+.inpw220{ width:220px;}
+.gew_btn{display:block; padding:0px 16px; height:30px; font-size:14px; text-align:center; line-height:30px; font-weight:bolder; color:#FFF; background:#ed302a; float:left; border:1px solid #ed302a;}
+.gew_btn:hover{background:#ff0000; border:1px solid #ff0000; text-decoration:none;}
+.gwc_zf{width:900px; background:#fff; height:auto; margin:10px auto 20px auto;}
+.gwc_zf table{width:800px; line-height:32px; height:32px;}
+.gwc_zf table td.left{ text-align:right; padding-right:5px; width:120px; color:#333;}
+.gwc_zf table input{vertical-align:middle;}
+.gew_yhbtn{display:block; padding:0px 16px; height:30px; width:40px; font-size:14px; text-align:center; line-height:30px; font-weight:bolder; color:#FFF; background:#fe8705; border:1px solid #d87100;}
+
+.gew_btnhui{display:block; padding:0px 16px; height:30px; font-size:12px; text-align:center; line-height:30px;  color:#666; background:#cfcfcf; float:left; margin-left:15px; border:1px solid #bfbfbf;}
+.gew_btnhui:hover{background:#dcdcdc; color:#000;  text-decoration:none;}
+
+.lolzhifulist{width:740px;}
+.lolzhifulist li{width:150px; height:38px; line-height:38px;  border:1px solid #e0e0e0; position:relative;  cursor:pointer; float:left; margin-right:10px; margin-bottom:8px; text-align:center; color:#666; font-size:14px; font-weight:bolder;}
+.lolzhifulist li img{ display:block; padding:0px; margin:0px;}
+.lolzhifulist li span{display:block; width:21px; height:21px; position:absolute; bottom:0px; right:0px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hover.png) left -97px no-repeat; }
+.lolzhifulist li.buywx{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zhifu_wx.jpg) 10px center no-repeat; text-indent:50px; text-align:left;}
+.lolzhifulist li.hover{border:1px solid #ed302a; color:#000; line-height:38px;}
+.lolzhifulist li.hover span{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hover.png) left -74px no-repeat; }
+.lolzhifulist li.wen{height:16px; padding-top:24px; line-height:16px; width:auto; border:0px solid #e0e0e0; position:relative;  cursor:pointer; float:left; margin-right:8px; margin-bottom:8px; text-align:left; color:#999; cursor:inherit;}
+
+.zhifu_yhmb{height:20px; background:#fff;}
+.zhifu_yhbar{width:726px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zhifubar.jpg) left bottom no-repeat; margin-left:84px; margin-bottom:0px;}
+.zhifu_yh{width:696px; padding:20px 10px 20px 20px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zhifubartop1.jpg) left top no-repeat; height:248px;}
+.zhifu_yh2{width:696px; padding:20px 10px 20px 20px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zhifubartop2.jpg) left top no-repeat; height:248px;}
+.zhifu_yh3{width:696px; padding:20px 10px 20px 20px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/zhifubartop3.jpg) left top no-repeat; height:378px;}
+.zhifu_yhbar,zhifu_yh,zhifu_yh2,zhifu_yh3{ display:none;}
+
+.ui-list-icons{width:680px;}
+.ui-list-icons li {
+    float: left;
+    list-style-type: none;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    width: 160px;
+}
+
+
+/*智能浮动*/
+.zhifubar{padding:16px 16px 16px 16px; width:846px; height:auto;}
+.zhifuwen{width:84px; text-align:right;}
+.zhifu{height:auto; margin-bottom:10px;}
+.zhifu2{height:auto; margin-bottom:0px;}
+.zhifulist{float:left;}
+.zhifuwen{line-height:40px; color:#555; padding-right:3px; }
+.zhifulist{width:540px;}
+.zhifulist li{width:60px; height:38px; line-height:38px; width:122px; border:1px solid #e0e0e0; position:relative;  cursor:pointer; float:left; margin-right:8px; margin-bottom:8px; text-align:center; color:#666;}
+.zhifulist li img{ display:block; padding:0px; margin:0px;}
+.zhifulist li span{display:block; width:21px; height:21px; position:absolute; bottom:0px; right:0px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hover.png) left -97px no-repeat; }
+.zhifulist li.hover{border:1px solid #ed302a; color:#000; line-height:38px;}
+.zhifulist li.hover span{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/hover.png) left -74px no-repeat; }
+.zhifulist li.wen{height:16px; padding-top:24px; line-height:16px; width:auto; border:0px solid #e0e0e0; position:relative;  cursor:pointer; float:left; margin-right:8px; margin-bottom:8px; text-align:left; color:#999; cursor:inherit;}
+
+.buy_ddbar{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/heibj.png); height:100%; width:100%; padding:6px; position: fixed; top: 0%; left:0%; position: fixed; _position: absolute; _bottom:expression(eval(document.documentElement.scrollTop));
+z-index: 999;  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||30))); display:none;}
+.buy_ddmain{border:6px solid #343434; height:218px; width:388px; background:#fff;
+ position:fixed; top: 50%; left:50%; position: fixed; margin-left:-194px;  margin-top:-110px; _position: absolute; _bottom:expression(eval(document.documentElement.scrollTop));
+z-index: 999;  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||30)));}
+a.buy_ddmain_click{ position:absolute; right:-46px; top:-6px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/heibj.png); color:#FFF; font-size:26px; line-height:34px; height:40px; width:40px; text-align:center;}
+.barclose{position:absolute; width:48px; height:48px; top:-12px; right:-60px; cursor:pointer; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/close.jpg);}
+.ddtipmain{ margin:50px 0px 30px 30px; padding-left:35px;  font-size:16px; line-height:26px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -318px -242px no-repeat;}
+.ddtipbar{ padding-left:30px;}
+a.ddtip_bot{width:142px; height:40px; line-height:40px; color:#FFF; display:block; background:#ed3029; font-size:14px; text-align:center; margin-right:10px; float:left;}
+a.ddtip_bot:hover{ background:#f1110f;  line-height:40px; color:#FFF; text-decoration:none;}
+
+a.ddtip_bothui{width:142px; height:40px; line-height:40px; color:#FFF; display:block; background:#4f4f4f; font-size:14px; text-align:center; float:left;}
+a.ddtip_bothui:hover{ background:#333;  line-height:40px; color:#FFF; text-decoration:none;}
+
+
+/*智能浮动*/
+.shopdd{width:auto; margin:16px 10px 26px 10px; width:858px;}
+.shopdd th{line-height:20px; font-weight:normal; color:#555; padding:4px; border-bottom:1px solid #e3e1e1;}
+.shopdd td{line-height:20px; color:#555; text-align:center; padding:4px;  border-bottom:1px solid #e3e1e1;}
+.shopdd td.imgleft img{ width:46px; height:46px;}
+.shopdd td.leftwen{text-align:left;}
+.shopdd th.leftwen{text-align:left;}
+.shopdd td.rightwen{text-align:right; text-align:right;}
+a.fanghui{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -320px -183px no-repeat; display:block; text-align:left; text-indent:20px; width:110px; color:#555; float:right;}
+a.fanghui:hover{ color:#000;}
+.buyddtop{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/topxian.jpg) left 8px repeat-x; line-height:18px; height:18px;}
+.buyddleft1{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -5px -250px no-repeat #FFF; color:#f72e27; text-indent:16px; padding-right:6px;}
+.buyddleft2{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -5px -280px no-repeat #FFF; color:#f72e27; text-indent:16px; padding-right:6px;}
+.buyddleft3{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -3px -366px no-repeat #FFF; color:#f72e27; text-indent:16px; padding-right:6px;}
+.buyddleft4{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/base.jpg) -3px -341px no-repeat #FFF; color:#f72e27; text-indent:16px; padding-right:6px;}
+.buy_dd{width:240px; padding:8px 13px; line-height:24px;}
+a.buyddright{background:#FFF; color:#666; text-indent:0px; padding-left:6px; text-decoration:underline;}
+a.buyddright:hover{color:#000;}
+.buy_ddfont{ line-height:20px; padding-left:16px; padding-top:4px; padding-bottom:0px; color:#555;}
+.sel_yhq{border:1px solid #c0c0c0; line-height:22px; height:22px; width:140px;}
+.yhq_tip{ padding-top:6px; color:#000; line-height:18px; font-size:12px; display:none;}
+
+/*支付完*/
+.buybj{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/buy_bj.jpg) left top no-repeat #FFF; width:1190px; height:498px; padding-top:0px;}
+.buybj2{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/buy_bj2.jpg) left top no-repeat #FFF; width:1190px; height:498px; padding-top:0px;}
+.buybjmain{padding:116px 60px 60px 80px; line-height:28px;}
+.buybjmain_jks{padding-top:60px; padding-left:60px; line-height:28px;}
+.buybjmain h3{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/buy_wx.png) left 5px no-repeat; line-height:36px; height:36px;  font-size:26px; text-indent:38px;}
+a.buybj_bot{width:110px; height:34px; line-height:34px; color:#FFF; display:block; background:#ed3029; font-size:14px; text-align:center; margin-right:10px; float:left;}
+a.buybj_bot:hover{ background:#f1110f;  line-height:34px; color:#FFF; text-decoration:none;}
+.buyyhq{width:48%; display:inline-block; margin:10px 10px 0px 0px; padding-bottom:0px;}
+.buyyhq a{display:block; height:48px; line-height:24px; width:360px; padding:4px 6px; border:1px solid #cfcfcf; float:left; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/yhqhover2.jpg) right -81px no-repeat #FFF; font-size:14px; margin-bottom:10px; margin-right:20px;}
+
+/*金克丝手办*/
+.buy_jks{width:636px; height:252px; margin-left:60px; margin-top:20px; position:relative;}
+.buy_jks h3{ font-size:14px; font-weight:bolder; line-height:35px; text-indent:16px; color:#FFF;}
+.buy_jks h3 a{ font-weight:normal; font-size:12px; color:#FFF; text-decoration:underline;}
+.buy_jks a.bot_info{ width:246px; height:66px; position:absolute; left:18px; top:110px; text-align:center; color:#000; text-decoration:underline; font-size:22px; line-height:66px; font-weight:bolder;}
+.buy_jks a.bot_info:hover{ color:#ed3029;}
+.buy_jks a.bot_sumlist{width:52px; height:16px; position:absolute; left:554px; top:192px;}
+.buy_jks span.bot_sum{width:60px; height:22px; line-height:22px; position:absolute; left:430px; top:111px; color:#ffe614; font-size:20px; font-weight:bolder;}
+.buy_jksbar{ width:252px; height:56px; text-align:center; color:#FFF; margin-top:20px; margin-left:16px;}
+/*.buy_jksbar ul.tab_menu li{ float:right; font-size:11px; height:16px; width:16px; line-height:16px;  text-align:center; background:#d7d5d5; color:#505050; margin-left:2px; cursor:pointer;}
+.buy_jksbar ul.tab_menu li.current{background:#ed3029; color:#FFF;}
+.buy_jksbar ul.tab_menu{ height:16px;}
+.buy_jksbar div.tab_box{ height:50px; line-height:50px; font-weight:bolder; color:#FFF; text-align:center; padding:0px; margin:0px;}*/
+.buy_jksbar_font{font-size:14px; font-weight:bolder; line-height:50px; padding:0px; margin:0px; float:left; vertical-align:middle; color:#FFF;
+ width:110px; text-align:right;}
+ 
+.buy_jksbar_sum1 span{display:block; font-size:30px; line-height:50px; float:left; padding-left:15px; font-weight:bolder;}
+.buy_jksbar_sum1{width:140px; height:50px; padding:0px; margin:0px; display:inline-table; vertical-align:middle; float:left;}
+
+.buy_jksbar_sum2 span{display:block; font-size:20px; line-height:20px; float:left; padding-right:8px; padding-left:8px; border-right: solid #d9413c 1px; font-weight:bolder;}
+.buy_jksbar_sum2{width:140px; height:35px; padding:15px 0px 0px 0px; margin:0px; display:inline-table; vertical-align:middle; float:left;}
+.buy_jksbar_sum3 span{display:block; font-size:20px; line-height:20px; float:left; padding-right:8px; padding-left:8px; border-right: solid #d9413c 1px; font-weight:bolder; margin-top:4px;}
+.buy_jksbar_sum3{width:140px; height:50px; padding:0px 0px 0px 0px; margin:0px; display:inline-table; vertical-align:middle; float:left;}
+
+.buy_jksbar_sum4 span{display:block; font-size:20px; line-height:20px; float:left; padding-right:8px; padding-left:8px; border-right: solid #d9413c 1px; font-weight:bolder; margin-top:4px;}
+.buy_jksbar_sum4{width:140px; height:50px; padding:0px 0px 0px 0px; margin:0px; display:inline-table; vertical-align:middle; float:left;}
+
+.buy_jksbar_sum5 span{display:block; font-size:14px; line-height:20px; float:left; padding-right:4px; padding-left:4px; border-right: solid #d9413c 1px; font-weight:bolder; margin-top:4px;}
+.buy_jksbar_sum5{width:140px; height:50px; padding:0px 0px 0px 0px; margin:0px; display:inline-table; vertical-align:middle; float:left;}
+
+
+.buyyhq a:hover{ text-decoration:none;  border:1px solid #999; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/yhqhover2.jpg) right -148px no-repeat #FFF;}
+
+.buyyhq a.yhq_hui{color:#999; background:#FFF; cursor:default; border:1px solid #cfcfcf;}
+.buyyhq a.yhq_hui:hover{color:#999; background:#FFF; border:1px solid #cfcfcf;}
+.buyyhq a.yhqhover{display:block; height:48px; line-height:24px; width:360px; padding:4px 6px; border:1px solid #eb3125; float:left; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/yhqhover2.jpg) right -13px no-repeat #FFF; font-size:14px; margin-bottom:10px; margin-right:20px; color:#eb3125;}
+
+.buyyhq a.yhqhover:hover{display:block; height:48px; line-height:24px; padding:4px 6px; border:1px solid #cfcfcf; float:left; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/yhqhover2.jpg) right -211px no-repeat #FFF; font-size:14px; margin-bottom:10px; margin-right:10px; color:#eb3125;}
+.buyyhqwen{ padding:0px 10px 26px 10px; line-height:20px; color:#000;}
+.buyyhqwu{ margin:16px 10px 10px 10px;  line-height:20px; font-size:16px; color:#eb3125;  border-bottom:1px solid #e3e1e1;  padding-bottom:10px;}
+.buyyhq  span.fonttit{}
+
+/*优惠券分栏*/
+.quan_tab{width:840px; height:auto; margin-bottom:0px; padding-left:10px; padding-bottom:20px; margin-top:16px;}
+.quan_tab ul{ width:839px; background:#efefef; height:34px; border-left:1px solid #CCC;}
+.quan_tab ul li{width:120px; line-height:32px; float:left; border:1px solid #CCC; border-left:0px; background:#FFF; font-size:14px; text-align:center; color:#666; cursor:pointer;}
+.quan_tab ul li.current{border-bottom:1px solid #fff; color:#000; font-weight:bolder; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/list/leftdian.png) center 28px no-repeat #FFF;}
+
+/*优惠券分栏*/
+
+/*信用卡*/
+.icon-boxxy01{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy01.jpg) left top no-repeat #FFF; }
+.icon-boxxy02{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy02.jpg) left top no-repeat #FFF; }
+.icon-boxxy03{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy03.jpg) left top no-repeat #FFF; }
+.icon-boxxy04{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy04.jpg) left top no-repeat #FFF; }
+.icon-boxxy05{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy05.jpg) left top no-repeat #FFF; }
+.icon-boxxy06{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy06.jpg) left top no-repeat #FFF; }
+.icon-boxxy07{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/xy07.jpg) left top no-repeat #FFF; }
+
+
+.icon-boxjjk01{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk01.jpg) left top no-repeat #FFF; }
+.icon-boxjjk02{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk02.jpg) left top no-repeat #FFF; }
+.icon-boxjjk03{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk03.jpg) left top no-repeat #FFF; }
+.icon-boxjjk04{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk04.jpg) left top no-repeat #FFF; }
+.icon-boxjjk05{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk05.jpg) left top no-repeat #FFF; }
+.icon-boxjjk06{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk06.jpg) left top no-repeat #FFF; }
+.icon-boxjjk07{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk07.jpg) left top no-repeat #FFF; }
+.icon-boxjjk08{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk08.jpg) left top no-repeat #FFF; }
+.icon-boxjjk09{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk09.jpg) left top no-repeat #FFF; }
+.icon-boxjjk10{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk10.jpg) left top no-repeat #FFF; }
+
+.icon-boxjjk11{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk11.jpg) left top no-repeat #FFF; }
+.icon-boxjjk12{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk12.jpg) left top no-repeat #FFF; }
+.icon-boxjjk13{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk13.jpg) left top no-repeat #FFF; }
+.icon-boxjjk14{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk14.jpg) left top no-repeat #FFF; }
+.icon-boxjjk15{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk15.jpg) left top no-repeat #FFF; }
+.icon-boxjjk16{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk16.jpg) left top no-repeat #FFF; }
+.icon-boxjjk17{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk17.jpg) left top no-repeat #FFF; }
+.icon-boxjjk18{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/jjk18.jpg) left top no-repeat #FFF; }
+
+
+
+
+.icon-boxka {
+    border: 1px solid #ddd;
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    width: 135px;
+}
+
+.buy_quan{ width:98%; height:40px; line-height:30px; margin-bottom:0px; padding-left:10px; padding-top:20px; overflow:hidden;}
+.buy_quan_font{font-size:14px; float:left;  width:100px; color:#666; background:#e8e8e8; text-align:center; line-height:32px;}
+.buy_quan_hea{font-size:14px; width:100%; color:#666;  text-align:left; line-height:32px; margin-top:10px;}
+.yhlist{ float:left;}
+.yhlist_txt{ border:1px solid #e8e8e8; width:200px; height:30px; line-height:30px; vertical-align:top; text-indent:4px;}
+.yhlist_bot{ border:none; background:#cfcfcf; color:#333; height:32px; line-height:32px; padding-left:0px; width:60px; text-align:center; vertical-align:top; font-size:14px; font-weight:bolder; cursor:pointer;}
+.yhlist_yes{ font-size:14px; line-height:32px; width:200px; border:1px solid #e8e8e8; height:30px; line-height:30px; padding:0px 0px 0px 10px; float:left; color:#333; position:relative;}
+.yhlist_yes a{ background:#e8e8e8; line-height:32px; margin-bottom:10px; position:absolute; right:0px; top:0px; width:60px; text-align:center;}
+.ordbar_wen{ line-height:30px; padding-left:10px; font-size:14px; color:#000; font-weight:bolder; float:left; }
+.buy_qqtit{line-height:46px; height:46px; border:1px solid #edd28b; background:#fffdee; color:#f8332d; text-align:left; text-indent:12px; margin-top:16px;}
+.buy_qqtit a{color:#fa322c; border:1px solid #fa322c; padding:3px 8px; line-height:24px; background:#f8332d; color:#FFF; border-radius:3px;}
+
+.buy_mztit{line-height:46px; height:46px; border:1px solid #edd28b; background:#fffdee; color:#f8332d; text-align:left; text-indent:12px; margin-bottom:16px;}
+.buy_mztit a{color:#fa322c; border:1px solid #fa322c; padding:3px 8px; line-height:24px; background:#f8332d; color:#FFF; border-radius:3px;}
+
+.buytopml{ background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/buy_lc.jpg) left top no-repeat; width:700px; height:56px; margin:0px; padding:0px;}
+.buytopml2{ background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/buy/buy_lc.jpg) left -58px no-repeat; width:700px; height:56px; margin:0px; padding:0px;}
+/*.topbar{height:122px;}
+.menubar{background:none;}*/
+
+/*组合商品*/
+.zuhe_box{ position:relative;}
+.zuhe_top{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/hed_xian.jpg) left top repeat-x; height:42px; padding-top:3px; line-height:41px; height:41px; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8;}
+.zuhe_top li{ padding:0px 40px; border-right:1px solid #c8c8c8; float:left; font-size:14px; color:#555; cursor:pointer;}
+.zuhe_top li.current{background:#fff; padding:0px 50px; font-size:14px; color:#ed3029;}
+.zuhe_bar_ext{padding-bottom:0px; height:auto; padding-top:16px; border-bottom:1px solid #e6e6e6;  border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}
+.zuhe{height:auto; width:1168px; margin-left:10px; margin-right:10px; margin-bottom:12px; position:relative; /*background:#FFC;*/}
+
+.zuhe_left{width:188px; height:auto; padding-right:2px;  /*border-right:1px solid #e8e7e7;*/ float:left;}
+.zuhe_shopbar{width:160px; height:auto; padding-top:16px; position:relative;/* margin:0px auto 0px auto;*/ margin-right:16px; float:left;}
+.zuhe_chima{width:142px; padding:8px; position:absolute; bottom:0px; left:0px; border:1px solid #e8e7e7; background:#FFF; display:none;}
+.zuhe_cmbar{ margin-bottom:6px;}
+.zuhe_cm_font{float:left; text-align:center; line-height:26px; width:38px; color:#555;}
+.zuhe_cm_list{float:left; width:100px;}
+.zuhe_cm_list li{float:left; height:26px; line-height:26px; border:2px solid #e0e0e0; padding-left:8px; padding-right:8px;  cursor:pointer; margin-bottom:4px; margin-right:6px;}
+.zuhe_cm_list li.clickcm{background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/detail_hover_cm.png) right bottom no-repeat; border:2px solid #ec2f29;}
+.zuhe_cm_list li:hover{border:2px solid #ec2f29;}
+.zuhe_shopbar img.zuhe_shop{display:block; width:160px; height:160px;}
+.zuhe_tit{width:160px; height:22px; line-height:22px; overflow:hidden; text-align:left;}
+.zuhe_cm_bot{ padding-left:38px; height:32px;}
+a.zuhe_cm_bot_yes{width:46px; height:26px; line-height:26px; background:#ed3029; display:block; text-align:center; color:#FFF; margin-right:6px; float:left;}
+a.zuhe_cm_bot_yes:hover{ text-decoration:none; background:#f1110f;}
+a.zuhe_cm_bot_no{width:46px; height:26px; line-height:26px; background:#e8e7e7; display:block; text-align:center; color:#333; float:left;}
+a.zuhe_cm_bot_no:hover{text-decoration:none; background:#dcdcdc;}
+
+.zuhe_tit a:hover{ color:#ed3029;}
+.zuhe_hover{width:160px; height:26px; line-height:26px; overflow:hidden; text-align:left; color:#999;}
+.zuhe_ico_left{padding-left:22px; line-height:26px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -10px -12px; padding-bottom:6px; color:#ed3029;}
+.zuhe_ico{line-height:26px; /*background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -10px -46px;*/ color:#ed3029; padding-bottom:6px; cursor:pointer; text-align:left;}
+.zuhe_ico font{ padding-left:10px;}
+.zuhe_ico:hover{color:#ed3029; line-height:26px; padding-bottom:6px; cursor:pointer;}
+.zuhe_ico_hover{/*background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -10px -12px;*/ color:#ed3029;  line-height:26px; padding-bottom:6px; cursor:pointer;}
+.zuhe_ma{height:30px; line-height:30px; position:relative; background:#e8e7e7; margin-bottom:4px; text-indent:10px; color:#333;}
+.zuhe_ma_bot{background:#e8e7e7; height:30px; width:60px; text-align:center; display:block; position:absolute; right:0px; top:0px; text-decoration:underline;}
+
+.zuhe_mid{height:306px; margin-bottom:6px; width:880px;  overflow-x:auto; position:relative; overflow-y:hidden; }
+
+.zuhe_midbar{width:auto; height:auto;}
+.zuhe_shop_jia{width:32px; height:30px; background:#FF6; float:left; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -3px -84px; margin-top:80px; margin-left:10px; margin-right:10px;}
+
+.zuhe_right_bj{height:224px; width:38px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/shop_list.png) repeat-y center left; position:absolute; left:-38px; top:0px;}
+.zuhe_right{float:left; width:198px; height:226px; background:#fff; position:relative;}
+.zuhe_deng{width:24px; height:24px; background:#FF6; float:left; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -8px -132px; margin-top:84px; margin-left:10px; margin-right:10px;}
+.zuhe_rightbar{padding-top:50px; float:left; width:146px; font-size:14px; height:160px; color:#333; line-height:20px;}
+.zuhe_youhui{color:#ed3029; font-size:12px;  line-height:20px; padding-bottom:6px; border-bottom:1px solid #e8e7e7; margin-bottom:6px;}
+.zuhe_maibot{ height:38px;  margin-top:2px; line-height:38px; font-size:16px; background:#ed3029; text-align:center; color:#FFF; display:block;}
+.zuhe_maibot:hover{background:#f1110f; text-decoration:none;}
+
+.zuhe_maibot_hui{ height:38px;  margin-top:2px; line-height:38px; font-size:16px; background:#686868; text-align:center; color:#FFF; display:block;}
+.zuhe_maibot_hui:hover{background:#686868; text-decoration:none; cursor:no-drop;}
+.zuhe_mid_bj{height:226px; width:38px; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/shop_list.png) repeat-y center left; position:fixed; right:0px; top:0px;}
+.zuhe_bar_ext{z-index:999; position:relative;}
+.zuhe_time{position:absolute; top:10px; right:10px; z-index:999; background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/show/zuhe_bj.png) no-repeat -47px -173px; height:27px; line-height:27px;}
+.zuhe_time span.zuhe_timespan{ float:left; display:block; width:26px; padding-right:13px; color:#FFF; text-align:center; font-size:14px;}
+
+/*-主框体-*/
+.mainbar{background:#FFF; height:auto; padding-top:16px; }
+  
+.fix{position:fixed}
+
+/*zuhe_zp*/
+.zuhe_zp{cursor:pointer;}
+.zuhe-ask{display:inline-block;margin:6px 0 0 5px;*margin-top:0;vertical-align: top;width:16px;height:16px;background:url(//js01.daoju.qq.com/zb/lolriotmall/pc/images/ico-ask.png) no-repeat;}
+.zpoverlay{width:348px;height:328px;background:#fff;box-shadow:0 0 20px rgba(0,0,0,.1);position:absolute;top:100px;left:500px;z-index:999;display:none;}
+.zpoverlay .zpol-btn-close{position:absolute;top:12px;right:12px;width:12px;height:12px;background-position:-115px -25px;text-indent:-9999em;}
+.zpoverlay .zpol-tit{width:100%;height:36px;line-height:36px;background:#efefef;color:#333;font-size:14px;text-indent:18px;}
+.zpoverlay .zpoverlay-main{width:100%;height:280px;overflow-y:auto;}
+.zpoverlay .zpoverlay-list{margin-left:20px;padding-bottom:18px;width:300px;height:auto;border-bottom:1px solid #e2e2e2;}
+.zpoverlay .zpol-list-tip{margin-top:15px;width:100%;height:15px;line-height:15px;font-size:14px;color:#666;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.zpoverlay .zpol-listul,.zpoverlay .zpol-listul li{width:100%;}
+.zpoverlay .zpol-listul li{margin-top:12px;height:50px;}
+.zpoverlay .zpol-listul li .zpol-djimg{width:50px;height:50px;}
+.zpoverlay .zpol-listul li .zpol-djinfo{margin-left:12px;width:235px;overflow:hidden;}
+.zpoverlay .zpol-listul li .zpol-djname{width:100%;height:18px;line-height:18px;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:14px;}
+.zpoverlay .zpol-listul li .zpol-djpri{margin-top:4px;color:#ed3029;line-height:16px;}
+.mycart-item-sel{width:194px;padding:4px 8px;position:relative;border:1px solid transparent;color:#999;}
+.mycart-item-sel .ico-xg{position:absolute;top:-1px;right:-1px;width:19px;height:18px;background-position:-83px -22px;display:none;}
+.buylist .mycart-item-sel{cursor:pointer;}
+.buylist:hover .mycart-item-sel{border:1px dashed #cacaca;}
+.buylist:hover .mycart-item-sel .ico-xg{display:block;}
+.buylist .mycart-item-sel:hover,.mycart-item-ed{border:1px dashed #ed3029;}
+.buylist .mycart-item-sel:hover .ico-xg,.mycart-item-ed .ico-xg{background-position:-54px -22px;}
+.buy_disable .mycart-item-sel,.buy_disable .mycart-item-sel:hover{border-color:transparent!important;cursor:default;}
+.buy_disable .mycart-item-sel .ico-xg{display:none!important;}
+.overlay{background:#fff;padding:8px 24px;border:1px solid #eee\0;*border:1px solid #eee;box-shadow:0 0 20px rgba(0,0,0,.1);position:absolute;top:0;left:0;z-index:999;display:none;}
+.overlay .overlay-arrow{width:0;height:0;border:5px solid;border-color:transparent transparent #fff transparent;position:absolute;top:-10px;left:10%;}
+.overlay-selist{padding:16px 0 6px;}
+.overlay-selist li{width:240px;position:relative;padding-left:48px;zoom:1;padding-bottom:10px;}
+.overlay-selist b{line-height:24px;font-weight:normal;color:#999;position:absolute;top:0;left:0;}
+.overlay-selist span{min-width:28px;padding:0 8px;text-align:center;color:#333;line-height:22px;margin-bottom:10px;border:1px solid #ddd;margin-right:8px;display:inline-block;vertical-align:top;*display:inline;zoom:1;cursor:pointer;}
+.overlay-selist span.on{border:1px solid #ed3029;color:#ed3029;}
+.overlay-btnbox{padding-bottom:20px;}
+.overlay-btn-sure{padding:6px 30px;color:#fff;text-decoration:none;background:#ed3029;}
+.overlay-btn-sure:hover{text-decoration:none;}
+.overlay-btn-cancel{color:#0d7ecd;padding-left:20px;}

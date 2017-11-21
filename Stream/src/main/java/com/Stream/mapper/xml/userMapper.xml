@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口  一定要写接口全路径否则  org.apache.ibatis.binding.BindingException-->
+<mapper namespace="com.Stream.dao.UserDao">
+	<cache eviction="LRU" flushInterval="60000" size="512" readOnly="true"></cache>
+	<sql id="sql">
+	   u.id,u.username,u.password,u.nickname,u.email,u.phone,u.stat,u.code 
+	</sql>
+	<select id="selectByName" parameterType="User" resultType="User">
+	  select <include refid="sql"/>
+	  from st_user u where u.username=#{username}
+	</select>
+	<select id="selectById" parameterType="User" resultType="User">
+	  select  <include refid="sql"/>
+	  from st_user u where u.id=#{id}
+	</select>
+	<select id="selectList" parameterType="User" resultType="User">
+	  select  <include refid="sql"/>
+	  from st_user u 
+	</select>
+	<select id="queryUser" parameterType="String" resultType="User">
+	  select  <include refid="sql"/>
+	  from st_user u where u.code=#{code}
+	</select>
+	<update id="update" parameterType="User">
+	  update st_user u set u.stat=#{stat} ,u.code=#{code} where  u.id=#{id}
+	</update>
+	<insert id="addUser" parameterType="User" >
+	   insert into st_user values(null,#{username},#{password},#{nickname},#{email}
+	   ,#{phone},#{stat},null)
+	</insert>
+</mapper>

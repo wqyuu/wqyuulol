@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+ #uuu9_vote_box{padding: 20px; border:#999 solid 1px;}
+.uuu9_vote_box_title{ padding: 5px 0;font-size: 12px;}
+.uuu9_vote_box_text {padding: 10px 0 0 0;}
+.uuu9_vote_box_button span{cursor: pointer; display: inline-block; font-family: 'Arial'; font-size: 12px; font-weight: bold; height: 33px;line-height: 33px;margin: 0 1px 3px 0;margin: 01px1px0; vertical-align: middle;white-space: nowrap;position: relative;}
+ .uuu9_vote_box_button span a{ color: #FFF;text-decoration: none !important;display: inline-block;font-weight: bold; overflow: hidden; padding: 0 9px;text-decoration: none;}
+ .uuu9_vote_box_button span a:hover{color: #2792E5;background: #FFF;}
+ .interactive_opinion_block_red0{ background: #f00; border: solid 1px #f00;}
+.interactive_opinion_block_red1{ background: #FF5B5B;border: solid 1px #FF5B5B; }
+ .interactive_opinion_block_red2{background: #FF8484;border: solid 1px #FF8484; }
+ .interactive_opinion_block_red3{background: #FFA6A6; border: solid 1px #FFA6A6;}
+ .interactive_opinion_block_red4{ background: #FFC8C8;border: solid 1px #FFC8C8;}
+ #uuu9_vote_text{height: 30px;background: #fff;position: absolute;z-index: 9;display: inline-block;color: #000;border: solid 1px #ccc;line-height: 30px;padding: 0 9px;vertical-align: middle;white-space: nowrap;}
+.uuu9_vote_input_box{margin-top: 10px;}
+.uuu9_vote_input_text{height: 16px;padding: 1px;line-height: 16px;border: solid 1px #ccc; width: 140px;}
+#uuu9_vote_text b{ font-weight: bold; margin: 0 5px;color: red;}
+.uuu9_vote_input_button{width: 40px; height: 20px;border: solid 1px #f30; background: #F90; color: #fff;cursor: pointer;margin-left: 10px;}

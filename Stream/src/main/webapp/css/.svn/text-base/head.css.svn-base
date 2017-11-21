@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+	ul,dl,dt,dd{padding:0px; margin:0px;}
+    body{font-size:12px;padding:0px; margin:0px;background:#F1F2F6 }
+    .headDiv{background: #4F4F51; width: 100%; height: 50px;position:absolute; z-index: 2;}
+    .content{margin-left: 50px; padding-top: 10px}  
+    .xiao{color: #FFFFFF; font-size:20px;float:left;
+          font-weight: bold; padding-left: 14px;padding-top: 5px;}
+   .mobile{margin-left: 10px;margin-top: 6px; }
+   .mobile_qr{float: left;position: relative;}
+   .mobile_qr a{font-size: 14px; text-decoration: none; color: #FF7E3E;}
+    #qr{display: none;background: white; position: absolute;margin-left:-67px;margin-top:40px;
+    	 border:thin; width: 200px; height: 210px;}
+    .img{ width: 200px; height: 200px; border-color: white;}
+    .strong{ padding-left: 10px;font-size: 14px; color: #616161;}
+    .biao {padding-left:540px;padding-top: 4px;}
+    .biao ul{list-style: none;background-color: red;}
+    .biao li{float: left;width: 85px; font-weight: bold;}
+    .biao a{font-size: 16px;text-decoration: none;color:#FFFFFF }
+    .biao a:HOVER {color:#FF7E3E}
+    .login{float: left}
+    .login a{font-size: 16px;color:#FFFFFF;padding-left: 200px;z-index: }
+    .login a:hover{color:#FF7E3E}
+    .reg  a{font-size: 16px;color:#FFFFFF;padding-left: 20px;}
+    .reg a:hover{color:#FF7E3E}
+    
+ #bcontent{display: none;background: white; margin-left:-283px;margin-top:15px;
+ position: absolute;width: 950px;height: 390px;} 
+#bcontent a{color:#c0c0c0;padding-left: 25px;font-size: 17px;font-weight: 400; }
+#bcontent a:hover{color:#FF6F3D }
+.daban{padding-left: 30px;padding-top:10px;} 
+
+.xiaotou{font-size: 17px;color: #FF7E3E; float: left}
+ 
+ .mask{margin:0px;padding:0;border:none;width:100%;height:100%;background-color:#333;opacity:0.6;
+    filter:alpha(opacity=60);z-index:9999;position:fixed;top:0;left:0;display:block;}   
+   	/*登陆*/
+    .logininput {width: 250px;height: 40px;font-size: 16px;border: 1px solid #EDEDED;}
+	#loginbtn {background-color: #FF7E00;width: 250px;height: 50px;line-height: 50px;border: 1px solid #EDEDED;cursor: pointer;font-size: 16px;font-family: 黑体;}
+ 	#quxiaobtn {background-color: #F3F3F3;width: 250px;height: 50px;line-height: 50px;border: 1px solid #EDEDED;cursor: pointer;font-size: 16px;font-family: 黑体;}	
+ 	.loginDiv {text-align: center;background-color: white;width: 510px;height: 600px;position: absolute;top:190px;left:730px;
+ 	display:none;z-index:10000;}
+	#loginlogo {width: 55px;margin: 0px auto;}
+	#login_title {width: 200px;margin: 0px auto;font-family: 黑体;}
+	#login_form {margin: 0px auto;width: 300px;height: 300px;}
+	#xy {width: 450px;margin: 0px auto;color: gray;margin-top: -30px;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    

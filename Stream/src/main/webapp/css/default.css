@@ -1,0 +1,37 @@
+body{background:none;}
+.plbox a:hover{text-decoration: none;}
+.plhd{margin: 0 0 20px 0;border-bottom: 1px solid #bfbfbf;height: 33px;}
+.plhd li{float:left;height: 30px;line-height: 30px;margin-right: 10px;}
+.plhd li.on{border:1px solid #bfbfbf;border-top:3px solid #00a481;border-bottom:none;background: #FFF;height: 31px;line-height: 31px;}
+.plhd li.on a{font-weight: 700;color:#01a384;}
+.plhd li a{display: block;padding:0 20px;color:#333;font-size: 16px;}
+.plhd .more{color:#2b78c8;border:none;background: none;float: right;margin-right: 0;}
+.plhd .more a{color:#00a481;padding:0;font-size: 14px;}
+.comment{border-bottom: 1px dotted #d3d3d3;margin-bottom: 20px;padding-left:72px;}
+.comment .avatar img{width: 66px;height: 66px;-moz-border-radius: 33px;-webkit-border-radius: 33px;border-radius: 33px;margin-left: -72px;}
+.coitem{padding-left:10px;margin-bottom: 10px;}
+.comment .pob{line-height: 20px;margin:0 0 0 10px;padding-bottom: 10px;}
+.comment .pob em{float: right;}
+.authi .pname{color:#01a384;font-weight:700;}
+.authi .pname:hover{text-decoration:underline;}
+.connby{color:#323433;}
+.authi em{color:#828fa0;}
+.pob em a{padding:0 5px 0 15px;}
+.czan, .fastre{background: url(http://ossweb-img.qq.com/images/lol/comment/images/cts.png) no-repeat 0 3px;}
+.pob .fastre{padding-left: 18px;}
+.pob .nums{color:#fff;background: #ff690f;padding:1px 2px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.fastre{background-position: 0 -19px;}
+.mitems{background: #00a481;line-height: 30px;text-align: center;margin-top: 30px;}
+.mitems a{color:#FFF;font-size: 14px;}
+.pncomment {font-size: 14px;}
+.pncomment .pn {height: 26px;background: url(http://ossweb-img.qq.com/images/lol/comment/images/fast_post.png) no-repeat 0 0;width: 107px;height: 35px;border:none;box-shadow:none;}
+.avtimg img{width: 20px;height: 20px;margin-right: 10px;position: relative;top:5px;}
+.pcomhd{line-height: 30px;color:#333333;font-size: 20px;}
+.pcomhd .y{color:#666666;}
+.wp{width:auto}
+a .h-ul:hover{text-decoration:underline;}
+#morea:hover{text-decoration:underline;}
+.more a:hover{text-decoration:underline;}
+.tedt{border-color:#CCC #CCC #CCC #CCC;width:99%;}
+body{font-family:'Microsoft Yahei','Simsun';}
+.connby{font-size:14px;}/*  |xGv00|715827a5240b684fc11300722750ad01 */

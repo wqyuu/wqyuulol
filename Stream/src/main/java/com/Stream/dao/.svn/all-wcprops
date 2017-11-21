@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wqy1011/!svn/ver/8/Stream/src/main/java/com/Stream/dao
+END
+HeroDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/dao/HeroDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/dao/UserDao.java
+END
+SkillDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/dao/SkillDao.java
+END
+NoticeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/dao/NoticeDao.java
+END
+T_userDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/dao/T_userDao.java
+END
+KindDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/dao/KindDao.java
+END
+AdminDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/dao/AdminDao.java
+END
+GameDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/dao/GameDao.java
+END
+ContentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/dao/ContentDao.java
+END

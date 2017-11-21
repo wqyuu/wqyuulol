@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/error
+END
+ErrorCode400.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/error/ErrorCode400.jsp
+END
+ErrorCode500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/8/Stream/src/main/webapp/jsp/error/ErrorCode500.jsp
+END
+ErrorCode404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/8/Stream/src/main/webapp/jsp/error/ErrorCode404.jsp
+END

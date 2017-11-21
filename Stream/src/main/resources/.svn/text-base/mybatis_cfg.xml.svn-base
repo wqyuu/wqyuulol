@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 设置缓存 -->
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+	<!-- 设置别名 -->
+	<typeAliases>
+		<typeAlias type="com.Stream.entity.User" alias="User" />
+		<typeAlias type="com.Stream.entity.Game" alias="Game" />
+		<typeAlias type="com.Stream.entity.Skill" alias="Skill" />
+		<typeAlias type="com.Stream.entity.Kind" alias="Kind" />
+		<typeAlias type="com.Stream.entity.Admin" alias="Admin" />
+		<typeAlias type="com.Stream.entity.Hero" alias="Hero" />
+         <typeAlias type="com.Stream.entity.LolNotic" alias="Notic" />
+	</typeAliases>
+	<!-- 配置拦截器 -->
+	<plugins>
+		<plugin interceptor="com.Stream.interceptor.PageInterceptor"></plugin>
+	</plugins>
+	<!-- 配置数据信息，主备模式 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<!-- 连接字符串错误： Communications link failure -->
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8" />
+				<property name="username" value="root" />
+				<property name="password" value="3306" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 用来加载mapper.xml -->
+	<mappers>
+		<!--resource 写mapper的全路径不然报错： Could not find resource com/oracle/mapper/xml/userMapper -->
+		<mapper resource="com/Stream/mapper/xml/userMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/gameMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/kindMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/adminMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/heroMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/skillMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/noticeMapper.xml" />
+	</mappers>
+</configuration>

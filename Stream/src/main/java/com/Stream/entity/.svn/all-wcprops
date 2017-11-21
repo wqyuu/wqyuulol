@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/wqy1011/!svn/ver/8/Stream/src/main/java/com/Stream/entity
+END
+Itemtype.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Itemtype.java
+END
+Regional.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Regional.java
+END
+T_user.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/entity/T_user.java
+END
+Skin.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Skin.java
+END
+Car.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Car.java
+END
+LolCarshop.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolCarshop.java
+END
+Sbtype.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Sbtype.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/entity/BaseEntity.java
+END
+LolYue.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolYue.java
+END
+Game.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Game.java
+END
+NoticOo.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/NoticOo.java
+END
+Smalltype.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Smalltype.java
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/wqy1011/!svn/ver/9/Stream/src/main/java/com/Stream/entity/Tag.java
+END
+NoticSkill.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/NoticSkill.java
+END
+LolStreet.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolStreet.java
+END
+Skill.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Skill.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/wqy1011/!svn/ver/9/Stream/src/main/java/com/Stream/entity/User.java
+END
+LolCity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolCity.java
+END
+Leveltip.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Leveltip.java
+END
+Hero.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Hero.java
+END
+Shouban.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Shouban.java
+END
+Peoinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Peoinfo.java
+END
+Herotype.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Herotype.java
+END
+LolOrderdetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolOrderdetail.java
+END
+FriendCom.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/FriendCom.java
+END
+Heroinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Heroinfo.java
+END
+Content.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/entity/Content.java
+END
+Shopqq.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Shopqq.java
+END
+KindGame.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/KindGame.java
+END
+Items.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Items.java
+END
+LolOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolOrder.java
+END
+LolNotic.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolNotic.java
+END
+LolDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolDate.java
+END
+People.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/People.java
+END
+Kind.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Kind.java
+END
+Scomment.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Scomment.java
+END
+Admin.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Admin.java
+END
+NoticHero.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/NoticHero.java
+END
+NoticO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/NoticO.java
+END
+Consumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Consumer.java
+END
+LolDistrict.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolDistrict.java
+END
+LolAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/LolAddress.java
+END
+Effect.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Effect.java
+END
+Herospell.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/entity/Herospell.java
+END

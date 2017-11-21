@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/wqy1011/!svn/ver/8/Stream/src/main/java/com/Stream/mapper/xml
+END
+heroMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/mapper/xml/heroMapper.xml
+END
+userMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/mapper/xml/userMapper.xml
+END
+skillMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/mapper/xml/skillMapper.xml
+END
+noticeMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/mapper/xml/noticeMapper.xml
+END
+kindMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/mapper/xml/kindMapper.xml
+END
+adminMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/mapper/xml/adminMapper.xml
+END
+gameMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/mapper/xml/gameMapper.xml
+END

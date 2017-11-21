@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/wqy1011/!svn/ver/8/Stream/src/main/resources
+END
+applicatioinContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wqy1011/!svn/ver/33/Stream/src/main/resources/applicatioinContext.xml
+END
+mybatis_cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/wqy1011/!svn/ver/27/Stream/src/main/resources/mybatis_cfg.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/wqy1011/!svn/ver/8/Stream/src/main/resources/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/wqy1011/!svn/ver/9/Stream/src/main/resources/jdbc.properties
+END

@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../smile.ico" type="image/x-icon" >
+<!-- 引入 Bootstrap的css文件 -->
+<link rel="stylesheet" href="../csss/bootstrap.min.css">
+<link href="../csss/base.css" rel="stylesheet">
+ <link href="../csss/fenleixiangqing.css" rel="stylesheet">
+<script src="../jss/jquery.min.js"></script>
+<script src="../jss/top.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../jss/bootstrap.min.js"></script>
+<script src="../jss/biaoqian.js"></script>
+<script src="../jss/search.js"></script>
+<script type="text/javascript" src="../js1/vue.js"></script>
+<script type="text/javascript" src="../js1/axios.js"></script>
+<script type="text/javascript" src="../js1/qs.js"></script>
+<script type="text/javascript" src="../js1/main.js"></script>
+ <title>分类</title>
+ <style>
+   li{
+      list-style:none;
+    }
+ .pagination {
+        position: relative;
+
+      }
+      .pagination li{
+        display: inline-block;
+        margin:0 5px;
+      }
+      .pagination li a{
+        padding:.5rem 1rem;
+        display:inline-block;
+        border:1px solid #ddd;
+        background:#fff;
+
+        color:#0E90D2;
+      }
+      .pagination li a:hover{
+        background:#eee;
+      }
+      .pagination li.active a{
+        background:#0E90D2;
+        color:#fff;
+      }
+ </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid headheight">
+        <div class="col-md-offset-3">
+            <div class="navbar-header">
+                <a href="/">
+                    <img alt="Brand" src="../image/logo.jpg" width="90" height="60">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/jsp/index.jsp">商城</a>
+                    </li>
+                    <li class="navbar-form">
+                     <form action="serach/findByName" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" id="searchbox">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container"  id="bookClassListContant">
+    <div class="row"  >
+    <ul>
+      <li v-for="(kind, index) in bookClassList":key="kind.kid" >
+        <div class="col-xs-2 col-sm-2 col-md-2">
+            <div class="gutter_header" >
+                <ul class="list-group" id="leixing" >
+                     <li>{{index+1}}</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10">
+            <div class="row">
+                <div class="row clx" id="xianshineirong"></div>
+                <div class="row">
+                    <div class="col-md-8 deletepadding" >
+                     <div >
+                        <ul id="fenleixiangqing">
+                            <li><a v-on:click="toDetail(kind.kid)" >
+                        {{kind.kname}}  </a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 tupianfuji" style="margin-left: -100px;">
+                        <ul id="fenleiyouxitupian">
+                         <li><img v-bind:src="game.img" /></li> <br>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+            
+            </li>
+          </ul>  
+          <div class="pagination">
+                <ul id="app">
+	                <li v-for="n in totalpage" style="float: left;margin-left: 10px;" >
+	                   <a v-on:click="next(n)" >{{n}}</a>
+	                <!--    v-bind:clss="activeNumber===n+1?'active':''" -->
+	                </li>
+	                <li></li>
+                </ul>
+            </div>
+    </div>
+</div>
+<footer class="footer" style="margin-top: 180px;">
+    <div class="row dibu">
+        ©2017 WePlay Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+        所有的价格均已包含增值税（如适用）。
+        <a href="#">隐私政策</a> | <a href="#">法律信息</a> | <a href="#"> WePlay 用户协议</a> | <a href="#">退款</a>
+    </div>
+</footer>
+
+<script>
+    $('body').css({
+        "overflow-x": "hidden"
+    });
+</script>
+<script>
+
+/* var app=new Vue({
+	el:'#app',
+	data:{
+		activeNumber:1,
+		totalpage:''
+	},
+	beforeCreate:function (){
+		var _self = this._self;
+        axios.get('http://localhost:8080/Stream/serach/findtotalpage.do?Page=1')
+        .then(function (response) {
+        	alert(response.data.totalpage);
+       	 _self.totalpage = response.data.totalpage;
+        })
+	}
+}) */
+ var bookClassListContant = new Vue({
+	el:"#bookClassListContant",
+	data:{
+		bookClassList:'',
+		game:'',
+		totalpage:''
+	},
+	beforeCreate:function (){
+		var _self = this._self;
+        axios.get('http://localhost:8080/Stream/serach/findAllKind.do?Page=1')
+        .then(function (response) {
+        
+       	 _self.bookClassList = response.data.kinds;
+       	_self.game =response.data.game;
+   	 _self.totalpage = response.data.totalpage;
+        })
+	},
+	methods:{
+		next:function(page){
+			var _self =  this._self;
+			axios.get('http://localhost:8080/Stream/serach/findAllKind.do?Page='+page)
+			.then(function(response){
+				
+				alert( _self);
+				//_self.bookClassList=
+/* 				alert(response.data.game.name);
+				alert(response.data.kinds);
+ */			  _self.bookClassList = response.data.kinds;
+			    _self.game =response.data.game;
+				 _self.totalpage = response.data.totalpage; 
+				// bookClassListContant.bookClassList.$set(response.data.kinds);
+				 /* this.data.bookClassList= response.data.kinds;
+				 this.data.game= response.data.game;
+				 this.data.totalpage= response.data.totalpage; */
+				// Vue.set(bookClassList,'kname',response.data.kinds[0].kname);
+			    //window.location.reload();
+			    //$('#bookClassListContant').modal('show');
+			});
+		},
+	info:function(id){
+		 window.location.href="http://localhost:8080/Stream/serach/kindGame.do?Page=1&kid="+id; 
+		}
+	}
+	
+}) 
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口 一定要写接口全路径否则 org.apache.ibatis.binding.BindingException -->
+<mapper namespace="com.Stream.dao.HeroDao">
+	<cache eviction="LRU" flushInterval="60000" size="512" readOnly="true"></cache>
+	<select id="selectList" parameterType="Hero" resultType="Hero">
+		select
+		h.id,h.name,h.title,h.picture,h.background,h.skill,h.skill2 from
+		lol_hero h
+	</select>
+
+	<sql id="hero">
+		h.id,h.name,h.title,h.picture,h.background,h.skill,h.skill2
+	</sql>
+	<sql id="type">
+		t.id,t.name
+	</sql>
+	<sql id="info">
+		i.id,i.attack,i.defense,i.magic,i.difficulty
+	</sql>
+	<sql id="spell">
+		s.id,s.uu,s.spname,s.description,s.image,s.tooltip
+	</sql>
+	<sql id="items">
+		it.id,it.name,it.picture,it.gold
+	</sql>
+	<sql id="itemtype">
+		ty.id,ty.name,ty.itid
+	</sql>
+	<sql id="effect">
+		e.eid,e.elabel
+	</sql>
+	<sql id="level">
+		l.lid,l.llabel
+	</sql>
+	<sql id="skin">
+		sk.sid,sk.spicture,sk.num,sk.sname
+	</sql>
+	<resultMap type="Hero" id="heroMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="title" column="title" />
+		<result property="picture" column="picture" />
+		<result property="background" column="background" />
+		<result property="skill" column="skill" />
+		<result property="skill2" column="skill2" />
+		<!-- 1.英雄属性 -->
+		<collection property="heroinfos" ofType="com.Stream.entity.Heroinfo"
+			column="heroid">
+			<id property="id" column="id" />
+			<result property="attack" column="attack" />
+			<result property="defense" column="defense" />
+			<result property="magic" column="magic" />
+			<result property="difficulty" column="difficulty" />
+		</collection>
+		<!-- 2.英雄皮肤 -->
+		<collection property="skins" ofType="com.Stream.entity.Skin"
+			column="heroid">
+			<id property="id" column="sid" />
+			<result property="name" column="sname" />
+			<result property="picture" column="spicture" />
+			<result property="num" column="num" />
+		</collection>
+		<!-- 3.英雄类型 -->
+		<collection property="herotypes" ofType="com.Stream.entity.Herotype">
+			<id property="id" column="id" />
+			<result property="name" column="name" />
+		</collection>
+		<!--4. 英雄技能 -->
+		<collection property="herospells" ofType="com.Stream.entity.Herospell"
+			column="heroid">
+			<id property="id" column="id" />
+			<result property="uu" column="uu" />
+			<result property="name" column="spname" />
+			<result property="description" column="description" />
+			<result property="image" column="image" />
+			<result property="tooltip" column="tooltip" />
+			<collection property="effects" ofType="com.Stream.entity.Effect"
+				column="spellid">
+				<id property="id" column="eid" />
+				<result property="label" column="elabel" />
+			</collection>
+			<collection property="leveltips" ofType="com.Stream.entity.Leveltip"
+				column="spellid">
+				<id property="id" column="lid" />
+				<result property="label" column="llabel" />
+			</collection>
+		</collection>
+		<!-- 5.英雄推荐物品 -->
+		<collection property="itemses" ofType="com.Stream.entity.Items">
+			<id property="id" column="id" />
+			<result property="name" column="name" />
+			<result property="picture" column="picture" />
+			<result property="gold" column="gold" />
+			<collection property="itemtypes" ofType="com.Stream.entity.Itemtype"
+				column="itid">
+				<id property="id" column="id" />
+				<result property="name" column="name" />
+			</collection>
+		</collection>
+	</resultMap>
+	
+	<select id="selectByid" parameterType="Hero" resultMap="heroMap">
+	 select <include refid="hero"/>,<include refid="type"/>,<include refid="info"/>,<include refid="spell"/>,
+	 <include refid="items"/> ,<include refid="itemtype"/>,<include refid="effect"/>,<include refid="level"/>,
+	 <include refid="skin"/> 
+	 from lol_hero h left join lol_hero_type lty on h.id=lty.heroid 
+	 left join lol_herotype t on lty.htypeid=t.id  
+	 left join lol_heroinfo i  on h.id=i.heroid 
+	 left join lol_herospell s on h.id=s.heroid 
+     left join lol_effect e on s.id=e.spellid      
+	 left join lol_leveltip l on s.id=l.spellid
+	 left join lol_ite_hero lih on h.id=lih.hid
+	 left join lol_items it on lih.iteid=it.id 
+	 left join lol_itemtype ty on it.id=ty.itid       
+	 left join lol_skin sk on h.id=sk.heroid
+	 where h.id=#{id}     
+	</select>
+</mapper>

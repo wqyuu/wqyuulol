@@ -1,0 +1,4 @@
+jdbc.url=jdbc:mysql://localhost:3306/oa
+jdbc.username=root
+jdbc.password=3306
+jdbc.driver=com.mysql.jdbc.Driver

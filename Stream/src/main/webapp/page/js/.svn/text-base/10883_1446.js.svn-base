@@ -1,0 +1,1 @@
+﻿document.writeln('<iframe src="http://img.xa9t.com/html/click/10883_1446.html" width="250" height="250" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe>');

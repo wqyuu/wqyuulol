@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口 一定要写接口全路径否则 org.apache.ibatis.binding.BindingException -->
+<mapper namespace="com.Stream.dao.KindDao">
+	
+	<sql id="sql">
+		g.id,g.creater,g.name,g.comm,g.systemcfg,g.price,g.discount,g.stat,g.img
+	</sql>
+	<!-- <parameterMap type="com.Stream.entity.KindGame" id="kidgid">
+	    <parameter property="game" />
+	    <parameter property="kind" />
+	</parameterMap> -->
+	<resultMap type="Kind" id="kindMap">
+		<id property="kid" column="kid" />
+	    <result property="kname" column="kname" />
+	</resultMap>
+	<resultMap type="Kind" id="Kindgame" extends="kindMap">
+	  <collection property="game" ofType="Game">
+	     <id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="creater" column="creater" />
+		<result property="comm" column="comm" />
+		<result property="discount" column="discount" />
+		<result property="price" column="price" />
+		<result property="stat" column="stat" />
+		<result property="systemcfg" column="systemcfg" />
+		<result property="img" column="img" />
+	  </collection>
+	</resultMap>
+	<!-- <select id="selectById" parameterType="Game" resultType="Game">
+		select
+		<include refid="sql" />
+		from shop_game u where g.id=#{id}
+	</select> -->
+	<select id="selectKinds" parameterType="Kind"  resultMap="Kindgame">
+	  select <include refid="sql" /> ,k.kid kid,k.kname kname from
+	   shop_game g left join shop_kindmapper sk on g.id=sk.game left join
+	   shop_kind k on sk.kind=k.kid 
+	</select>
+	<select id="selectByName" parameterType="Kind" resultType="Kind">
+	     select k.kid ,k.kname from shop_kind k where k.kname=#{kname}
+	</select>
+	<select id="selectKindGame" parameterType="Kind"  resultMap="Kindgame">
+	   select <include refid="sql" /> ,k.kid kid,k.kname kname from
+	   shop_game g left join shop_kindmapper sk on g.id=sk.game left join
+	   shop_kind k on sk.kind=k.kid where k.kid=#{kid}
+	</select>
+	<select id="selectGame" parameterType="Kind"  resultMap="Kindgame">
+	   select <include refid="sql" /> ,k.kid kid,k.kname kname from
+	   shop_game g left join shop_kindmapper sk on g.id=sk.game left join
+	   shop_kind k on sk.kind=k.kid where k.kid=#{kid}
+	</select>
+	<select id="count" parameterType="Kind" resultType="int">
+	  select count(*) from  shop_game g left join shop_kindmapper sk on g.id=sk.game left join
+	   shop_kind k on sk.kind=k.kid 
+	       <where>
+	          <if test="kid!=null">
+	             k.kid =#{kid}
+	          </if>
+	       </where>
+	</select>
+	<insert id="add" parameterType="Kind">
+	  insert into shop_kind values(null,#{kname})
+	</insert>
+	<insert id="insert" parameterType="com.Stream.entity.KindGame">
+	  insert into shop_kindmapper values(#{game.id},#{kind.kid})
+	</insert>
+	<delete id="delById" parameterType="com.Stream.entity.KindGame">
+	  delete from shop_kindmapper where kind=#{kind.kid}
+	</delete>
+	<delete id="delBygId" parameterType="com.Stream.entity.KindGame">
+	  delete from shop_kindmapper where game=#{game.id}
+	</delete>
+</mapper>

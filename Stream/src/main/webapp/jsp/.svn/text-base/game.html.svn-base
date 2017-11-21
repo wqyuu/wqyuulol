@@ -1,0 +1,132 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述三个标签需要放到最前边 -->
+<meta name="description" content="WePlay">
+<meta name="author" content="cie">
+<link rel="icon" href="../smile.ico" type="image/x-icon" >
+<!-- 引入 Bootstrap的css文件 -->
+<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"> -->
+<link rel="stylesheet" href="../csss/bootstrap.min.css">
+<link href="../csss/base.css" rel="stylesheet">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../jss/jquery.min.js"></script>
+<script src="../jss/top.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../jss/bootstrap.min.js"></script>
+    <link href="../csss/fenleixiangqing.css" rel="stylesheet">
+    <script src="../jss/biaoqian.js"></script>
+    <script src="../jss/fenlei.js"></script>
+    <script type="text/javascript" src="../js1/vue.js"></script>
+<script type="text/javascript" src="../js1/axios.js"></script>
+<script type="text/javascript" src="../js1/qs.js"></script>
+<script type="text/javascript" src="../js1/main.js"></script>
+    <title>分类游戏</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid headheight" >
+        <div class="col-md-offset-3">
+            <div class="navbar-header">
+                <a href="/">
+                    <img alt="Brand" src="../image/logo.jpg" width="90" height="60">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/jsp/index.jsp">商城</a>
+                    </li>
+                    <li class="navbar-form">
+                     <form action="serach/findByName" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" id="searchbox">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2">
+            <div class="gutter_header">
+                <ul class="list-group" id="leixing">
+                <a href="http://localhost:8080/Stream/jsp/search2.html">全部类型</a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10" id="game">
+            <div class="row">
+                <div class="row clx">正在浏览{{kind1.kname}}类型游戏</div>
+                <div class="row">
+                <ul>
+                <li  v-for="game in gameList">
+                    <div class="col-md-8 deletepadding">
+                        <ul style="color: white;">
+                         <li>{{game.name}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 tupianfuji">
+                        <ul id="fenleiyouxitupian" style="color: white; margin-left: -200px;margin-top: 10px;">
+                          <li><img  v-bind:src="game.img" /></li>
+                        </ul>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul id="paging">
+                   <li v-for="page in totalpage">
+                   <a v-on:click="info(page)" >{{page}}</a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer" style="margin-top: 180px;">
+    <div class="row dibu">
+        ©2017 WePlay Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+        所有的价格均已包含增值税（如适用）。
+        <a href="#">隐私政策</a> | <a href="#">法律信息</a> | <a href="#"> WePlay 用户协议</a> | <a href="#">退款</a>
+    </div>
+</footer>
+
+<script>
+    $('body').css({
+        "overflow-x": "hidden"
+    });
+    var bookClassListContant = new Vue({
+    	el:"#game",
+    	data:{
+    		kind1:'',
+    		gameList:'',
+    		totalpage:''
+    	},
+    	beforeCreate:function (){
+    		var _self = this._self;
+    		var href = window.location.href;
+    		var tag= href.substr(href.indexOf('=') + 1,href.length);
+            axios.get('http://localhost:8080/Stream/serach/findBytag.do?Page=1&tag='+tag)
+            .then(function (response) {
+            	alert( response.data.totalpage);
+           	 _self.kind1 = response.data.kind1;
+           	_self.gameList =response.data.gameList;
+       	 _self.totalpage = response.data.totalpage;
+            })
+    	}
+    }
+    )
+</script>
+</body>
+</html>

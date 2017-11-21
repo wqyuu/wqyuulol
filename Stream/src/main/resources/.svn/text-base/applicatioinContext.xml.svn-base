@@ -1,0 +1,74 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	 http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.3.xsd 
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	<!-- 扫描对象关系注解 -->
+	<!-- <mvc:annotation-driven/>
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	 http://www.springframework.org/schema/mvc
+     http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	 -->
+	<context:component-scan base-package="com.Stream.*"></context:component-scan>
+	<!-- bean工厂后处理器 ,是创建application 之后并加载 applicationContext.xml
+	之后实例化每个bean对象之前
+	-->
+	
+	<bean  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	 <property name="location">
+	   <value>classpath:jdbc.properties</value>
+	 </property>
+	</bean>
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="url">
+			<value>${jdbc.url}</value>
+		</property>
+		<property name="username">
+			<value>${jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${jdbc.password}</value>
+		</property>
+		<property name="driverClassName">
+			<value>${jdbc.driver}</value>
+		</property>
+	</bean>
+	<!-- 创建sqlsessionfactory 使用mybatis为什么创建：SqlSessionFactory 在spring创建sqlsessionfactory是通过SqlSessionFactoryBean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation">
+			<value>classpath:mybatis_cfg.xml</value>
+		</property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+
+	</bean>
+	
+	<!-- 扫描每一个dao接口，并创建dao对象实现 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage">
+			<value>com.Stream.dao</value>
+		</property>
+	</bean>
+	<!-- 上传 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	<!-- 视图解析器 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    <property name="prefix">
+	       <value>/</value>
+	    </property>
+	    <property name="suffix">
+	       <value>.jsp</value>
+	    </property>
+	</bean>
+</beans>
+
+   

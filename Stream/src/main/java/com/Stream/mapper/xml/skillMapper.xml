@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口  一定要写接口全路径否则  org.apache.ibatis.binding.BindingException-->
+<mapper namespace="com.Stream.dao.SkillDao">
+	<cache eviction="LRU" flushInterval="60000" size="512" readOnly="true"></cache>
+	<select id="selectList" parameterType="Skill" resultType="Skill">
+	   select s.id,s.name,s.picture,s.content,s.userlevel,s.pictureBig from lol_skill s 
+	</select>
+</mapper>

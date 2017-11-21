@@ -1,0 +1,1 @@
+var ogoods_app = {"ret":"-1","msg":"opt_type is illegal","sandbox":"false","serverTime":1509377196,"now":"2017-10-30 23:26:36","from_cache":false}
