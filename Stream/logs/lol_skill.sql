@@ -1,0 +1,2 @@
+INSERT INTO `lol_skill` (`id`, `name`, `picture`, `content`, `userlevel`, `pictureBig`) VALUES (1, '屏障', 'SummonerBarrier.png', '为你的英雄套上护盾，吸收115-455（取决于英雄等级）点伤害，持续2秒。', 1, 'SummonerBarrier.png');
+INSERT INTO `lol_skill` (`id`, `name`, `picture`, `content`, `userlevel`, `pictureBig`) VALUES (2, '净化', 'SummonerBoost.png', '移除身上的所有限制效果和召唤师技能的减益效果，并且若在接下来的3秒里再次被施加限制效果时，新效果的持续时间会减少65%。', 1, 'SummonerBoost.png');
