@@ -11,7 +11,7 @@ function () {
 		success : function(object) {
 			//objs = eval("(" + object + ")");
 			//alert("success!");
-			alert(object.hero[0].name);
+			//alert(object.hero[0].herospells[0].uu);
 			arr[0]=object.hero[0];
 		},
 		error : function() {
@@ -99,8 +99,8 @@ LOLherojs.champion.Ahri = {
 		},
 		"spells" : [
 				{
-					"id" :"AhriOrbofDeception",//,arr[0].herospells[0].uu
-					"name" :"\u6b3a\u8bc8\u5b9d\u73e0",//arr[0].herospells[0].name,//"",
+					"id" :arr[0].herospells[0].uu,//"AhriOrbofDeception",//,
+					"name" :arr[0].herospells[0].name,//"\u6b3a\u8bc8\u5b9d\u73e0",
 					"description" : arr[0].herospells[0].description,//"\u963f\u72f8\u653e\u51fa\u5e76\u6536\u56de\u5979"
 							//+ "\u7684\u5b9d\u73e0\uff0c\u5728\u653e\u51fa\u65f6\u4f1a\u6cbf\u9014"
 							//+ "\u5bf9\u654c\u4eba\u9020\u6210\u9b54\u6cd5\u4f24\u5bb3\uff0c\u5728\u6536"
@@ -108,8 +108,9 @@ LOLherojs.champion.Ahri = {
 							//+ "\u5b9e\u4f24\u5bb3\u3002\u5728\u5b9d\u73e0\u88ab\u653e\u51fa\u7684\u671f"
 							//+ "\u95f4\u91cc\uff0c\u963f\u72f8\u4f1a\u83b7\u5f97\u6301\u7eed\u8870\u51cf\u7684"
 							//+ "\u79fb\u52a8\u901f\u5ea6\u52a0\u6210\u3002",
+						//
 					"image" : {
-						"full" : arr[0].herospells[0].image,//"AhriOrbofDeception.png",
+						"full" :arr[0].herospells[0].image,//"AhriOrbofDeception.png", // 
 						"sprite" : "spell0.png",
 						"group" : "spell",
 						"x" : 48,
@@ -125,11 +126,11 @@ LOLherojs.champion.Ahri = {
 							+ "\u6bb5\u65f6\u95f4\u91cc\uff0c\u4f1a\u83b7\u5f97\u6301\u7eed\u8870\u51cf\u7684\u79fb\u52a8"
 							+ "\u901f\u5ea6\u52a0\u6210\u3002",
 					"leveltip" : {
-				"label" :[arr[0].herospells[0].leveltips[0].label,arr[0].herospells[0].leveltips[1].label],// [ "\u4f24\u5bb3" , "\u6cd5\u529b\u6d88\u8017"  ],//arr[1].herospell[1].leveltips[0].label,arr[1].herospell[1].leveltips[1].label
-						"effect" : [  arr[0].herospells[0].effects[0].label,               //"40\/65\/90\/115\/140",
-						              arr[0].herospells[0].effects[1].label ]                 //"  65\/70\/75\/80\/85" ]
+				"label" :[arr[0].herospells[0].leveltips[0].label,arr[0].herospells[0].leveltips[1].label],  //////   [ "\u4f24\u5bb3" , "\u6cd5\u529b\u6d88\u8017"  ],
+						"effect" : [ arr[0].herospells[0].effects[0].label,           //     "40\/65\/90\/115\/140",  
+						             arr[0].herospells[0].effects[1].label ]                 // "  65\/70\/75\/80\/85" ]
 					},
-					"resource" :  arr[0].herospells[0].effects[1].label//"65\/70\/75\/80\/85\u6cd5\u529b"
+					"resource" : "65\/70\/75\/80\/85\u6cd5\u529b"//  arr[0].herospells[0].effects[1].label
 				},
 				{
 					"id" : "AhriFoxFire",

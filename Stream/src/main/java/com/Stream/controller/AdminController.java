@@ -12,8 +12,12 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
@@ -73,16 +77,28 @@ public class AdminController extends BaseController {
 		this.aService = aService;
 	}
 	@RequestMapping(value="/login")
-	public ModelAndView login(final Admin a){
-		return exetuce(new CallBack() {
-			@Override
-			public void process(Map<String, Object> result) {
-				Admin a1=aService.selectByName(a);
-				if(a1!=null&&a1.getApass().equals(a.getApass())){
-					result.put("admin", a1);
-				}
+	public ModelAndView login(Admin a,HttpSession session){
+		
+		Admin a1=aService.selectByName(a);
+		if(a1!=null&&a1.getApass().equals(a.getApass())){
+			System.out.println("12346：：：："+a1.getAname());
+			//SecurityUtils.getSecurityManager().logout(SecurityUtils.getSubject());  
+	        // 登录后存放进shiro token  
+	        Subject subject = SecurityUtils.getSubject();  
+	        UsernamePasswordToken token = new UsernamePasswordToken(a1.getAname(), a1.getApass());  
+	        subject.login(token);  
+	        //用户认证状态
+	        Boolean isAuthenticated = subject.isAuthenticated();
+	        System.out.println("用户认证状态："+isAuthenticated);//输出true
+	       // Admin curUser = (Admin)subject.getPrincipal(); 
+	        if (isAuthenticated) {
+	        	session.setAttribute("admin", a1);
+		        return new ModelAndView("admin/adminpage");	
+			}else{
+				return new ModelAndView("jsp/error/ErrorCode500");
 			}
-		}, "jsp/adminpage");
+		}
+		  return new ModelAndView("jsp/error/ErrorCode500");
 	}
 	@RequestMapping(value="/UserAll")
 	public void UserAll(){
@@ -188,6 +204,7 @@ public class AdminController extends BaseController {
 		json(new CallBack() {
 			@Override
 			public void process(Map<String, Object> result) {
+				game.setImg("../image/"+game.getImg());
 				gService.update(game);
 			}
 		});
@@ -245,7 +262,7 @@ public class AdminController extends BaseController {
 					e.printStackTrace();
 				}
 			}
-		}, "jsp/adminpage");
+		}, "admin/adminpage");
 	}
 	
 	@RequestMapping(value="/getgamekind")

@@ -6,7 +6,7 @@
 </head>
 <body>
 <%@ include file="../common/top.jsp" %>
-<h1 style="color:#9d9d9d;">用户未激活${msg }</h1>
+<h1 style="color:#9d9d9d;">用户未激活请登录邮箱激活${msg }</h1>
 <%@ include file="../common/bottom.jsp" %>
 </body>
 </html>

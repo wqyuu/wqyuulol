@@ -31,7 +31,7 @@ public class MsgController extends BaseController {
 	public void setReqAndRes() {
 		User u1 = new User();
 		u1.setId(1);
-		u1.setUsername("腾讯官方客服");
+		u1.setUsername("小木偶的心");
 		users.put(u1.getId(), u1);
 		User u2 = new User();
 		u2.setId(2);

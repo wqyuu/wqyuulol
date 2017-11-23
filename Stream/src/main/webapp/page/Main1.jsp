@@ -222,7 +222,7 @@
 								href="//cafe.qq.com/" target="_blank">网吧特权</a></li>
 							<li class="sub-nav-item"><a class="sub-nav-lnk"
 								onclick="pgvSendClick({hottag:'v2.subnav.user.online'})"
-								href="//kf.qq.com/cgi-bin/SuperLOL" target="_blank">在线客服</a> <a
+								href="DemoWeb.jsp" target="_blank">在线客服</a> <a
 								class="sub-nav-lnk"
 								onclick="pgvSendClick({hottag:'v2.subnav.user.video'})"
 								href="/v/" target="_blank">视频中心</a> <!--<a class="sub-nav-lnk" onclick="pgvSendClick({hottag:'v2.subnav.user.active'})" href="/web201310/active.shtml" target="_blank"><i class="icon-hot"></i>活动中心</a>-->
@@ -231,7 +231,7 @@
 								target="_blank" href="//bbs.lol.qq.com/forum.php">官方论坛</a> <a
 								class="sub-nav-lnk"
 								onclick="pgvSendClick({hottag:'v2.subnav.user.weixin'})"
-								href="${pageContext.request.contextPath }/newl/NewList" target="_blank">官方公告</a> <a
+								href="${pageContext.request.contextPath }/notic/findAllNotic.do" target="_blank">官方公告</a> <a
 								class="sub-nav-lnk"
 								onclick="pgvSendClick({hottag:'v2.subnav.user.weibo'})"
 								href="//weibo.com/lol" target="_blank">官方微博</a></li>

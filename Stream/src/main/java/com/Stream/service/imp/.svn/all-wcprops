@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svn/wqy1011/!svn/ver/8/Stream/src/main/java/com/Stream/service/imp
+V 68
+/svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/service/imp
 END
 AdminServiceImp.java
 K 25
@@ -15,11 +15,23 @@ svn:wc:ra_dav:version-url
 V 88
 /svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/service/imp/GameServiceImp.java
 END
+OrderServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/service/imp/OrderServiceImp.java
+END
 NoticServiceImp.java
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/service/imp/NoticServiceImp.java
+END
+PlayerSpider.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/service/imp/PlayerSpider.java
 END
 HeroServiceImp.java
 K 25
@@ -39,6 +51,12 @@ svn:wc:ra_dav:version-url
 V 89
 /svn/wqy1011/!svn/ver/27/Stream/src/main/java/com/Stream/service/imp/SkillServiceImp.java
 END
+PlayService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/service/imp/PlayService.java
+END
 KindServiceImp.java
 K 25
 svn:wc:ra_dav:version-url
@@ -50,4 +68,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 92
 /svn/wqy1011/!svn/ver/33/Stream/src/main/java/com/Stream/service/imp/ContentServiceImpl.java
+END
+GcarshopServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/service/imp/GcarshopServiceImp.java
 END

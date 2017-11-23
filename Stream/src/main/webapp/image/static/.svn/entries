@@ -1,7 +1,7 @@
 10
 
 dir
-32
+40
 https://dell/svn/wqy1011/Stream/src/main/webapp/image/static
 https://dell/svn/wqy1011
 
@@ -25,40 +25,6 @@ wqy
 
 
 72bc1856-c02a-5041-b776-3b36babb5e2e
-
-order_2.png
-file
-
-
-
-
-2017-11-14T07:49:12.801216Z
-f4bb4b95ae4c6d86b73937519b2d58ba
-2017-11-14T11:20:35.646674Z
-8
-wqy
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7403
 
 logo.jpg
 file
@@ -93,6 +59,40 @@ has-props
 
 
 12382
+
+order_2.png
+file
+
+
+
+
+2017-11-14T07:49:12.801216Z
+f4bb4b95ae4c6d86b73937519b2d58ba
+2017-11-14T11:20:35.646674Z
+8
+wqy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7403
 
 personalbackground_1.jpg
 file
@@ -366,40 +366,6 @@ has-props
 
 7065
 
-jianhang.png
-file
-
-
-
-
-2017-11-14T07:49:12.749752Z
-6d0ef330ccd1f5bf050777b0b5305d9d
-2017-11-14T11:20:35.646674Z
-8
-wqy
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-54609
-
 yinhang2.png
 file
 
@@ -433,6 +399,40 @@ has-props
 
 
 18445
+
+jianhang.png
+file
+
+
+
+
+2017-11-14T07:49:12.749752Z
+6d0ef330ccd1f5bf050777b0b5305d9d
+2017-11-14T11:20:35.646674Z
+8
+wqy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+54609
 
 yinhang3.png
 file

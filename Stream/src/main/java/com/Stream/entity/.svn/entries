@@ -1,14 +1,14 @@
 10
 
 dir
-8
+40
 https://dell/svn/wqy1011/Stream/src/main/java/com/Stream/entity
 https://dell/svn/wqy1011
 
 
 
-2017-11-14T11:20:35.646674Z
-8
+2017-11-20T07:05:24.622686Z
+33
 wqy
 
 
@@ -28,7 +28,7 @@ wqy
 
 Regional.java
 file
-27
+
 
 
 
@@ -62,7 +62,7 @@ wqy
 
 Itemtype.java
 file
-27
+
 
 
 
@@ -96,7 +96,7 @@ wqy
 
 T_user.java
 file
-33
+
 
 
 
@@ -130,7 +130,7 @@ wqy
 
 Skin.java
 file
-27
+
 
 
 
@@ -164,7 +164,7 @@ wqy
 
 Car.java
 file
-27
+
 
 
 
@@ -198,7 +198,7 @@ wqy
 
 Sbtype.java
 file
-27
+
 
 
 
@@ -232,7 +232,7 @@ wqy
 
 LolCarshop.java
 file
-27
+
 
 
 
@@ -266,7 +266,7 @@ wqy
 
 BaseEntity.java
 file
-33
+
 
 
 
@@ -300,7 +300,7 @@ wqy
 
 Game.java
 file
-27
+
 
 
 
@@ -334,7 +334,7 @@ wqy
 
 LolYue.java
 file
-27
+
 
 
 
@@ -368,7 +368,7 @@ wqy
 
 Smalltype.java
 file
-27
+
 
 
 
@@ -402,7 +402,7 @@ wqy
 
 NoticOo.java
 file
-27
+
 
 
 
@@ -436,7 +436,7 @@ wqy
 
 Tag.java
 file
-9
+
 
 
 
@@ -470,7 +470,7 @@ wqy
 
 NoticSkill.java
 file
-27
+
 
 
 
@@ -504,7 +504,7 @@ wqy
 
 LolStreet.java
 file
-27
+
 
 
 
@@ -536,43 +536,9 @@ wqy
 
 1118
 
-Skill.java
-file
-27
-
-
-
-2017-11-16T12:55:10.985844Z
-ad5efd9b82f58ccfe3d7f993397dbb6c
-2017-11-17T08:17:47.190032Z
-27
-wqy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1341
-
 User.java
 file
-9
+
 
 
 
@@ -604,9 +570,43 @@ wqy
 
 1674
 
+Skill.java
+file
+
+
+
+
+2017-11-16T12:55:10.985844Z
+ad5efd9b82f58ccfe3d7f993397dbb6c
+2017-11-17T08:17:47.190032Z
+27
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1341
+
 LolCity.java
 file
-27
+
 
 
 
@@ -640,7 +640,7 @@ wqy
 
 Leveltip.java
 file
-27
+
 
 
 
@@ -672,9 +672,77 @@ wqy
 
 734
 
+Message.java
+file
+41
+
+
+
+2017-11-21T03:36:28.485782Z
+acb3114d165b3cf3f2ee4b727eb36bc4
+2017-11-22T06:17:25.455048Z
+41
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+800
+
+Player.java
+file
+41
+
+
+
+2017-11-21T06:53:35.767306Z
+d54ef7c9adeb87663d6d2e893109ec36
+2017-11-22T06:17:25.455048Z
+41
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1831
+
 Hero.java
 file
-27
+
 
 
 
@@ -706,16 +774,16 @@ wqy
 
 2882
 
-Peoinfo.java
+CarShop.java
 file
-27
+41
 
 
 
-2017-11-16T11:42:57.071217Z
-006678a86d5ee235aba7d67ca0dc9ba1
-2017-11-17T08:17:47.190032Z
-27
+2017-11-21T14:35:00.770373Z
+1fe12535f1ece4ad14e374b3df2e4502
+2017-11-22T06:17:25.455048Z
+41
 wqy
 
 
@@ -738,45 +806,11 @@ wqy
 
 
 
-1064
-
-Shouban.java
-file
-27
-
-
-
-2017-11-16T11:40:16.278048Z
-1335f72f9e2d996a7694374ef2dfb688
-2017-11-17T08:17:47.190032Z
-27
-wqy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2893
+606
 
 Herotype.java
 file
-27
+
 
 
 
@@ -808,9 +842,77 @@ wqy
 
 767
 
+Shouban.java
+file
+
+
+
+
+2017-11-16T11:40:16.278048Z
+1335f72f9e2d996a7694374ef2dfb688
+2017-11-17T08:17:47.190032Z
+27
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2893
+
+Peoinfo.java
+file
+
+
+
+
+2017-11-16T11:42:57.071217Z
+006678a86d5ee235aba7d67ca0dc9ba1
+2017-11-17T08:17:47.190032Z
+27
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1064
+
 LolOrderdetail.java
 file
-27
+
 
 
 
@@ -844,7 +946,7 @@ wqy
 
 FriendCom.java
 file
-27
+
 
 
 
@@ -878,7 +980,7 @@ wqy
 
 Heroinfo.java
 file
-27
+
 
 
 
@@ -912,7 +1014,7 @@ wqy
 
 Content.java
 file
-33
+
 
 
 
@@ -946,7 +1048,7 @@ wqy
 
 Shopqq.java
 file
-27
+
 
 
 
@@ -978,9 +1080,43 @@ wqy
 
 2847
 
+Order.java
+file
+41
+
+
+
+2017-11-22T01:34:19.266196Z
+b67fdd704e7098292d14275952ba9dd8
+2017-11-22T06:17:25.455048Z
+41
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+962
+
 KindGame.java
 file
-27
+
 
 
 
@@ -1014,7 +1150,7 @@ wqy
 
 Items.java
 file
-27
+
 
 
 
@@ -1048,7 +1184,7 @@ wqy
 
 LolOrder.java
 file
-27
+
 
 
 
@@ -1082,7 +1218,7 @@ wqy
 
 LolNotic.java
 file
-27
+
 
 
 
@@ -1116,7 +1252,7 @@ wqy
 
 LolDate.java
 file
-27
+
 
 
 
@@ -1150,7 +1286,7 @@ wqy
 
 People.java
 file
-27
+
 
 
 
@@ -1184,7 +1320,7 @@ wqy
 
 Kind.java
 file
-27
+
 
 
 
@@ -1218,7 +1354,7 @@ wqy
 
 Scomment.java
 file
-27
+
 
 
 
@@ -1252,7 +1388,7 @@ wqy
 
 Admin.java
 file
-27
+
 
 
 
@@ -1284,9 +1420,43 @@ wqy
 
 614
 
+GameCarshop.java
+file
+41
+
+
+
+2017-11-21T14:36:23.022537Z
+fc509ae407ad79a4196e501f111b75bc
+2017-11-22T06:17:25.455048Z
+41
+wqy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+885
+
 NoticHero.java
 file
-27
+
 
 
 
@@ -1320,7 +1490,7 @@ wqy
 
 Consumer.java
 file
-27
+
 
 
 
@@ -1354,7 +1524,7 @@ wqy
 
 NoticO.java
 file
-27
+
 
 
 
@@ -1388,7 +1558,7 @@ wqy
 
 LolDistrict.java
 file
-27
+
 
 
 
@@ -1422,7 +1592,7 @@ wqy
 
 Effect.java
 file
-27
+
 
 
 
@@ -1456,7 +1626,7 @@ wqy
 
 LolAddress.java
 file
-27
+
 
 
 
@@ -1490,7 +1660,7 @@ wqy
 
 Herospell.java
 file
-27
+
 
 
 

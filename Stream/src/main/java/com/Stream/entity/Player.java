@@ -1,4 +1,4 @@
-package com.Stream.entity;
+/*package com.Stream.entity;
 
 import java.util.Arrays;
 
@@ -94,3 +94,4 @@ public class Player {
 				+ ", champions=" + Arrays.toString(champions) + "]";
 	}
 }
+*/

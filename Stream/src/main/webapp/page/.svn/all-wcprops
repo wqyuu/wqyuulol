@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/page
+/svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/page
 END
 lolweb.jsp
 K 25
@@ -15,6 +15,12 @@ svn:wc:ra_dav:version-url
 V 64
 /svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/page/newList.jsp
 END
+socket.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/page/socket.jsp
+END
 Ming.jsp
 K 25
 svn:wc:ra_dav:version-url
@@ -26,6 +32,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 63
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/page/Yiflin.jsp
+END
+talk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/page/talk.jsp
 END
 gxgg.jsp
 K 25
@@ -104,6 +116,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 62
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/page/proxy.jsp
+END
+DemoWeb.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/page/DemoWeb.jsp
 END
 feilong.jsp
 K 25

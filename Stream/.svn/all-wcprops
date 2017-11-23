@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 30
-/svn/wqy1011/!svn/ver/8/Stream
+V 31
+/svn/wqy1011/!svn/ver/40/Stream
 END
 .classpath
 K 25
@@ -19,5 +19,5 @@ pom.xml
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svn/wqy1011/!svn/ver/33/Stream/pom.xml
+/svn/wqy1011/!svn/ver/41/Stream/pom.xml
 END

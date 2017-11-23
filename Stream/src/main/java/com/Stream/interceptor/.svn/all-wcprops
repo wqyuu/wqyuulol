@@ -1,11 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svn/wqy1011/!svn/ver/8/Stream/src/main/java/com/Stream/interceptor
+V 68
+/svn/wqy1011/!svn/ver/23/Stream/src/main/java/com/Stream/interceptor
+END
+HandShake.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/interceptor/HandShake.java
 END
 PageInterceptor.java
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svn/wqy1011/!svn/ver/23/Stream/src/main/java/com/Stream/interceptor/PageInterceptor.java
+END
+MyHandShakeInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/wqy1011/!svn/ver/41/Stream/src/main/java/com/Stream/interceptor/MyHandShakeInterceptor.java
 END

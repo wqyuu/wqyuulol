@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  isELIgnored="false"%>
 <html>
 <head>
     <%@ include file="common/head.jsp" %>
@@ -46,7 +46,7 @@
                     <li>在任何电脑上都能玩</li>
                     <li>安排游戏、比赛或 LAN 聚会</li>
                     <li>获取自动游戏更新以及更多！</li>
-                    <img class="imgdx" src="../img/login.png"/>
+                    <img class="imgdx" src="../image/login.png"/>
                 </ul>
             </div>
         </div>

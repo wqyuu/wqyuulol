@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/common
+/svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/jsp/common
 END
 bottom.jsp
 K 25
@@ -25,5 +25,5 @@ top.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/jsp/common/top.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/common/top.jsp
 END

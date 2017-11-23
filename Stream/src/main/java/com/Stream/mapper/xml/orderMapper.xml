@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口  一定要写接口全路径否则  org.apache.ibatis.binding.BindingException-->
+<mapper namespace="com.Stream.dao.OrderDao">
+	<sql id="sql">
+		g.id,g.creater,g.name 
+,g.comm,g.systemcfg,g.price,g.discount,g.stat,g.img
+	</sql>
+	<sql id="usql">
+	u.id,u.username,u.nickname,u.phone,u.email
+	</sql>
+	<sql id="osql">
+	o.id,o.gid,o.uid,o.price,o.stat,o.otime
+	</sql>
+	<insert id="add" parameterType="Order">
+	insert into shop_orderitem values(null,#{game.id},#{price},#{user.id},#{otime},#{stat})
+	</insert>
+	
+	<resultMap type="Order" id="OrderMap">
+	 <id  property="id" column="id" />
+	 <result property="price" column="price" />
+	 <result property="stat" column="stat"/>
+	 <result property="otime" column="otime"/>
+	 <association property="game" javaType="com.Stream.entity.Game"
+			column="gid">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="creater" column="creater" />
+		<result property="comm" column="comm" />
+		<result property="discount" column="discount" />
+		<result property="price" column="price" />
+		<result property="stat" column="stat" />
+		<result property="systemcfg" column="systemcfg" />
+		<result property="img" column="img" />
+		</association>
+		<association property="user" javaType="com.Stream.entity.User"
+			column="uid">
+			<id property="id" column="id" />
+			<result property="username" column="username" />
+			<result property="password" column="password" />
+			<result property="nickname" column="nickname" />
+			<result property="phone" column="phone" />
+			<result property="email" column="email" />
+			<result property="stat" column="stat" />
+			<result property="code" column="code" />
+		</association>
+	</resultMap>
+	
+	<select id="selectByid" parameterType="Order" resultMap="OrderMap">
+	   select <include refid="sql" />,<include refid="usql" />,<include refid="osql" />
+	    from shop_orderitem o  
+	    left join shop_game g on o.gid=g.id 
+	    left join st_user u on o.uid=u.id
+	    where o.uid=#{user.id} 
+	</select>
+	
+</mapper>

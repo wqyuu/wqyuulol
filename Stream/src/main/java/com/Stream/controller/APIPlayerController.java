@@ -1,4 +1,4 @@
-package com.Stream.controller;
+/*package com.Stream.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +21,11 @@ public class APIPlayerController {
 	@Autowired
 	private IPlayerService playerService;
 	
-	/**
+	*//**
 	 * 通过玩家昵称搜索
 	 * @param playerName
 	 * @return
-	 */
+	 *//*
 	//@GetMapping("/searchPlayers/{playerName}")
 	@RequestMapping("/searchPlayers")
 	public Message searchPlayers(String playerName) {//@PathVariable
@@ -42,12 +42,12 @@ public class APIPlayerController {
 		return msg;
 	}
 	
-	/**
+	*//**
 	 * 排位排行榜
 	 * @param areaId 大区ID
 	 * @param pageNum 第几页
 	 * @return
-	 */
+	 *//*
 	@GetMapping("/playerRanking/areaId/{areaId}")
 	public Message playerTierRanking(@PathVariable int areaId, @RequestParam("pageNum") int pageNum) {
 		Message msg = new Message();
@@ -63,3 +63,4 @@ public class APIPlayerController {
 	}
 	
 }
+*/

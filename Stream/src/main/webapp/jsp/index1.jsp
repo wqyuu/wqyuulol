@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-location.href="http://localhost:8080/Stream/game/findAllgame.do";
+location.href='http://localhost:8080/Stream/game/findAllgame.do';
 </script>
 </head>
 <body>

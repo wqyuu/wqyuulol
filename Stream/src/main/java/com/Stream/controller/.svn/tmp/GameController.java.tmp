@@ -1,0 +1,171 @@
+package com.Stream.controller;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.apache.shiro.web.session.HttpServletSession;
+import org.aspectj.apache.bcel.generic.ReturnaddressType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import com.Stream.entity.CarShop;
+import com.Stream.entity.Game;
+<<<<<<< .mine
+import com.Stream.entity.Order;
+import com.Stream.entity.User;
+=======
+>>>>>>> .r40
+import com.Stream.service.imp.GameServiceImp;
+<<<<<<< .mine
+import com.Stream.service.imp.OrderServiceImp;
+import com.Stream.utils.CallBack;
+=======
+>>>>>>> .r40
+
+@Controller
+@RequestMapping("/game")
+public class GameController extends BaseController {
+	@Resource
+	private GameServiceImp gameservice;
+	@Resource
+	private OrderServiceImp oServiceImp;
+	
+	
+	public OrderServiceImp getoServiceImp() {
+		return oServiceImp;
+	}
+
+	public void setoServiceImp(OrderServiceImp oServiceImp) {
+		this.oServiceImp = oServiceImp;
+	}
+
+	public GameServiceImp getGameservice() {
+		return gameservice;
+	}
+
+	public void setGameservice(GameServiceImp gameservice) {
+		this.gameservice = gameservice;
+	}
+
+	@RequestMapping(value = "/findAllgame")
+	public ModelAndView findAllgame() {
+
+		List<Game> gameList = gameservice.selectList();
+		Map<String, Object> map = new HashMap<>();
+		for (Game game : gameList) {
+
+			System.out.println(game.getId() + "asdasdasdasd" + game.getImg());
+		}
+		map.put("gamelist", gameList);
+
+		return new ModelAndView("jsp/index", map);
+
+	}
+
+	@RequestMapping(value = "/gameInfo")
+	public ModelAndView gameinfo(Game game, HttpServletRequest request) {
+
+		Map<String, Object> map = new HashMap<>();
+		System.out.println(game.getId());
+		Game gameinfo = (Game) gameservice.selectById(game);
+		
+		map.put("gameinfo", gameinfo);
+		System.out.println(gameinfo);
+		return new ModelAndView("jsp/gameInfo", map);
+	}
+	@RequestMapping(value = "/gameInfo")
+	public ModelAndView gameinfo(Game game, HttpServletRequest request) {
+
+<<<<<<< .mine
+		Map<String, Object> map = new HashMap<>();
+		//System.out.println(game.getId());
+		Game gameinfo = (Game) gameservice.selectById(game);
+		map.put("gameinfo", gameinfo);
+		//System.out.println(gameinfo);
+		return new ModelAndView("jsp/gameInfo", map);
+	}
+	
+	
+	@RequestMapping(value = "/carshop")
+	public ModelAndView carshop(final Game game,final HttpSession session) {
+		     System.out.println("carshop："+game.getId());
+				Game game1=gameservice.selectById(game);
+				Map<Integer, CarShop> carMap =  (Map<Integer, CarShop>) session.getAttribute("carMap");
+				if (carMap.containsKey(game1.getId())) {
+					// 数量加一
+					CarShop car = carMap.get(game1.getId());
+					car.setNumber(car.getNumber() + 1);
+				}else {
+					CarShop car=new CarShop();
+					car.setGame(game1);
+					car.setNumber(1l);
+					carMap.put(game1.getId(), car);
+				}
+				session.setAttribute("carMap", carMap);
+	   return new ModelAndView("jsp/shoppingcart");
+	}
+	
+	@RequestMapping(value="/pay")
+	public ModelAndView pay(Order order,HttpSession session){
+		String gids[]=request.getParameterValues("gids");
+		//取出用户对象
+		User user=(User) session.getAttribute("user");
+		System.out.println("paypaypaypay");
+		//添加新订单
+		SimpleDateFormat sim=new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			order.setOtime(sim.parse(sim.format(new Date())));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		order.setStat(0);
+		order.setUser(user);
+		//Game game1=new Game();
+		//game1.setId(gameid);
+		//Game game=gameservice.selectById(game1);
+		//order.setGame(game);
+		//添加新订单明细
+		Map<Integer, CarShop> carMap =  (Map<Integer, CarShop>) session.getAttribute("carMap");
+		if(gids!=null){
+			for(String gid:gids){
+				CarShop car=carMap.get(Integer.parseInt(gid));//取出购物车集合中对应的购物车
+				order.setGame(car.getGame());
+			}
+		}
+		//订单增加成功后返回该订单,order在方法中已经被设置了增加成功后的主键ID
+		oServiceImp.add(order);
+		//订单生成后，清空购物车中被结算过的商品并同时计算订单总额
+		//int total=0;
+		if(gids!=null){
+			for(String gid:gids){
+				//total+=carMap.get(pid).getNumber()*carMap.get(pid).getProduct().getPPrice();
+				carMap.remove(Integer.parseInt(gid));
+			}
+		}
+		List<Order> order2=oServiceImp.selectByid(order);
+		session.setAttribute("orderlist", order2);
+		//session.put("totalprice",total);
+		//session.put("msg","支付成功！订单将尽快发货!");
+		return new ModelAndView("jsp/order");
+	}
+	
+	@RequestMapping(value = "delete")
+	public ModelAndView delete(HttpSession session,Game game) {
+		// 取出session中购物车的集合.用gid删除
+		Map<Integer, CarShop> carMap =  (Map<Integer, CarShop>) session.getAttribute("carMap");
+		carMap.remove(game.getId());
+		session.setAttribute("carMap", carMap);
+		return new ModelAndView("jsp/shoppingcart");
+	}
+
+=======
+>>>>>>> .r40
+
+}

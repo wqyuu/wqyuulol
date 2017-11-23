@@ -5,6 +5,6 @@
 <mapper namespace="com.Stream.dao.AdminDao">
 	
 	<select id="selectByName" parameterType="Admin" resultType="Admin">
-	   select a.aid,a.aname,a.apass from st_admin a where a.aname=#{Name} 
+	   select a.aid,a.aname,a.apass from st_admin a where a.aname=#{Aname} 
 	</select>
 </mapper>

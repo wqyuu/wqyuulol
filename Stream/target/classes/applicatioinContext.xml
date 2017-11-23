@@ -15,14 +15,11 @@
 	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 	<!-- 扫描对象关系注解 -->
 	<mvc:annotation-driven/>
-	
-	
-	
 	<context:component-scan base-package="com.Stream.*"></context:component-scan>
 	<!-- bean工厂后处理器 ,是创建application 之后并加载 applicationContext.xml
 	之后实例化每个bean对象之前
 	-->
-	
+
 	<bean  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	 <property name="location">
 	   <value>classpath:jdbc.properties</value>

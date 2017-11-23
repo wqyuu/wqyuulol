@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -232,7 +233,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						 width="50" height="50" /></a>
 						 <a target="_blank" class="beta_tit"
 						  href="http://localhost:8080/Stream/notic/Notice.do?noticId=${notic.noticId}">
-						  ${notic.noticName}</a><i></i><span class="beta_date">更新时间：${notic.noticDate}</span></p>
+						  ${notic.noticName}</a><i></i><span class="beta_date">更新时间：<fmt:formatDate value="${notic.noticDate}" pattern="yyyy-MM-dd"/></span></p>
 					</li>
 					</c:forEach>
 										<!-- <li class="news-lst">

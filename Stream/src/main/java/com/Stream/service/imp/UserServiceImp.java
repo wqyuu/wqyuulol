@@ -73,7 +73,7 @@ public class UserServiceImp implements IcommonService {
         User u1=udao.selectByName(user);
 		if (user.getStat()==null||user.getStat()==0) {
 			try {
-				MailUtil.sendTo("<a href='127.0.0.1:8080/Stream/user/regconf.do?code=" + code + "&id="+u1.getId()+"'>激活帐号</a>",
+				MailUtil.sendTo("<a href='127.0.0.1:8080/Stream/user/regconf.do?code=" + code + "&id="+u1.getId()+"'>激活帐号,激活码："+code+"</a>",
 						user.getEmail());
 			} catch (Exception e) {
 				e.printStackTrace();

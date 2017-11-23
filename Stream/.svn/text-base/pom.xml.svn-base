@@ -220,7 +220,18 @@
          <dependency>
 	      <groupId>org.springframework</groupId>
 	      <artifactId>spring-messaging</artifactId>
-	      <version>4.0.5.RELEASE</version>
+	      <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.5.3</version>
+       </dependency>
+         <dependency>
+          <groupId>org.eclipse.jetty.websocket</groupId>
+          <artifactId>websocket-server</artifactId>
+          <version>9.2.17.v20160517</version>
+          <scope>test</scope>
         </dependency>
 	</dependencies>
 	<build>

@@ -1,7 +1,7 @@
 10
 
 dir
-32
+40
 https://dell/svn/wqy1011/Stream/src/main/webapp/image/1
 https://dell/svn/wqy1011
 
@@ -196,12 +196,35 @@ has-props
 
 265071
 
+header.jpg
+file
+
+
+
+add
+
+7389637c3283784a48ce051c6012e6f7
+
+
+
+has-props
+
+
+
+
+
+
+
+copied
+https://dell/svn/wqy1011/Stream/src/main/webapp/image/1/header1.jpg
+40
+
 header1.jpg
 file
 
 
 
-
+delete
 2017-11-15T08:17:49.375046Z
 7389637c3283784a48ce051c6012e6f7
 2017-11-17T08:17:47.190032Z

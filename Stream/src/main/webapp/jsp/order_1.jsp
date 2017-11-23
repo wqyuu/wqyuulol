@@ -28,14 +28,45 @@
         <table class="table">
             <thead>
             <th style="color:#C6D4DF">
-                订单编号: ${id}
+                订单编号: ${order.id}
             </th>
             <th style="color:#C6D4DF">
-                收货人: ${user}
+                收货人: ${user.username}
             </th>
             </thead>
         </table>
     </div>
+
+<!-- <tr>
+			<td width="26%" height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="CMBCHINA-NET" checked="checked">招商银行</td>
+			<td width="25%" height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="ICBC-NET">工商银行</td>
+			<td width="25%" height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="ABC-NET">农业银行</td>
+			<td width="24%" height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="CCB-NET">建设银行</td>
+		</tr>
+		<tr>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="CMBC-NET">中国民生银行总行</td>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="CEB-NET">光大银行</td>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="BOCO-NET">交通银行</td>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="SDB-NET">深圳发展银行</td>
+		</tr>
+		<tr>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="BCCB-NET">北京银行</td>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="CIB-NET">兴业银行</td>
+			<td height="25"><INPUT TYPE="radio" NAME="pd_FrpId"
+				value="SPDB-NET">上海浦东发展银行</td>
+			<td><INPUT TYPE="radio" NAME="pd_FrpId" value="ECITIC-NET">中信银行</td>
+		</tr> -->
+
 
     <div class="row" style="background-color:#3D6C8D">
         <h3 align="center" style="color:#C6D4DF">请选择支付方式</h3>

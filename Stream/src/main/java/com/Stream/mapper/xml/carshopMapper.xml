@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD 
+Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应接口 一定要写接口全路径否则 org.apache.ibatis.binding.BindingException -->
+<mapper namespace="com.Stream.dao.CarshopDao">
+	<sql id="sql">
+		g.id,g.creater,g.name 
+,g.comm,g.systemcfg,g.price,g.discount,g.stat,g.img
+	</sql>
+	<insert id="add" parameterType="com.Stream.entity.GameCarshop">
+		insert into carshop
+		values(null,#{game.id },#{user.id },#{total})
+	</insert>
+	<resultMap type="Gcarshop" id="cashopMap">
+		<result property="Cid"  column="c_id" />
+		<result property="total" column="total" />
+		<association property="game" javaType="com.Stream.entity.Game"
+			column="g_id">
+			<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="creater" column="creater" />
+		<result property="comm" column="comm" />
+		<result property="discount" column="discount" />
+		<result property="price" column="price" />
+		<result property="stat" column="stat" />
+		<result property="systemcfg" column="systemcfg" />
+		<result property="img" column="img" />
+		</association>
+		<association property="user" javaType="com.Stream.entity.User"
+			column="u_id">
+			<id property="id" column="id" />
+			<result property="username" column="username" />
+			<result property="password" column="password" />
+			<result property="nickname" column="nickname" />
+			<result property="phone" column="phone" />
+			<result property="email" column="email" />
+			<result property="stat" column="stat" />
+			<result property="code" column="code" />
+		</association>
+	</resultMap>
+
+	<select id="selectByid" parameterType="Gcarshop" resultMap="cashopMap">
+		select
+		<include refid="sql" />
+	,c.c_id,c.total,u.id,u.username,u.nickname,u.phone,u.email
+	from
+	carshop c left join shop_game g on c.g_id=g.id left join
+	st_user u on c.u_id=u.id where c.u_id=#{user.id}
+	</select>
+	
+	<delete id="deleteByuid" parameterType="Gcarshop" >
+		delete  from carshop where u_id=#{user.id}
+	</delete>
+
+</mapper>
+	
+
+
+

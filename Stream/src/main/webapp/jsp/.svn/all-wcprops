@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/wqy1011/!svn/ver/31/Stream/src/main/webapp/jsp
+/svn/wqy1011/!svn/ver/39/Stream/src/main/webapp/jsp
 END
 register.jsp
 K 25
@@ -13,7 +13,7 @@ gameInfo.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/gameInfo.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/gameInfo.jsp
 END
 checkemail.jsp
 K 25
@@ -37,7 +37,7 @@ index1.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/wqy1011/!svn/ver/39/Stream/src/main/webapp/jsp/index1.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/index1.jsp
 END
 taggames.jsp
 K 25
@@ -61,13 +61,13 @@ order_1.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/order_1.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/order_1.jsp
 END
 order_2.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/order_2.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/order_2.jsp
 END
 updateUserInfo.jsp
 K 25
@@ -85,7 +85,7 @@ shoppingcart.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/shoppingcart.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/shoppingcart.jsp
 END
 kinds2.html
 K 25
@@ -115,13 +115,13 @@ index.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/jsp/index.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/index.jsp
 END
 login.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/login.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/login.jsp
 END
 kinds.jsp
 K 25
@@ -133,7 +133,7 @@ order.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/order.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/order.jsp
 END
 adminlogin.jsp
 K 25
@@ -157,5 +157,5 @@ personal.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/jsp/personal.jsp
+/svn/wqy1011/!svn/ver/41/Stream/src/main/webapp/jsp/personal.jsp
 END

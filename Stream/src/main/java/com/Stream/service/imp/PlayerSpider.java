@@ -1,4 +1,4 @@
-package com.Stream.service.imp;
+/*package com.Stream.service.imp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,17 +10,17 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 public class PlayerSpider {
 	
-	/**
+	*//**
 	 * 通过游戏昵称检索出该名称在各大区信息
 	 * @param playerName
 	 * @return
-	 */
+	 *//*
 	public static List<Player> searchPlayerList(String playerName) throws Exception {
 		String jsonData = GetNetDataUtil.GetNetData("http://api.pallas.tgp.qq.com/core/search_player", "key=" + URLCodeUtil.getUTF8(playerName), true);
 		
-		/**
+		*//**
 		 * 有的时候Cookie会失效
-		 */
+		 *//*
 		while(jsonData.contains("2002")) {
 			jsonData = GetNetDataUtil.GetNetData("http://api.pallas.tgp.qq.com/core/search_player", "key=" + URLCodeUtil.getUTF8(playerName), true);
 		}
@@ -44,12 +44,12 @@ public class PlayerSpider {
 		return players;
 	}
 	
-	/**
+	*//**
 	 * 封装各大区段位排行榜--玩家
 	 * @param areaId 大区ID
 	 * @param pageNum 第几页
 	 * @return
-	 */
+	 *//*
 	public static List<Player> playerTierRanking(int areaId, int pageNum) throws Exception {
 		String jsonData = GetNetDataUtil.GetNetData("http://api.pallas.tgp.qq.com/core/get_score_rank", "area_id=" + areaId + "&pnum=" + pageNum, true);
 		
@@ -84,3 +84,4 @@ public class PlayerSpider {
 		return players;
 	}
 }
+*/

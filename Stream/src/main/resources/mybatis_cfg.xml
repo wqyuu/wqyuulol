@@ -14,7 +14,9 @@
 		<typeAlias type="com.Stream.entity.Kind" alias="Kind" />
 		<typeAlias type="com.Stream.entity.Admin" alias="Admin" />
 		<typeAlias type="com.Stream.entity.Hero" alias="Hero" />
-         <typeAlias type="com.Stream.entity.LolNotic" alias="Notic" />
+		<typeAlias type="com.Stream.entity.LolNotic" alias="Notic" />
+		<typeAlias type="com.Stream.entity.GameCarshop" alias="Gcarshop" />
+		<typeAlias type="com.Stream.entity.Order" alias="Order" />
 	</typeAliases>
 	<!-- 配置拦截器 -->
 	<plugins>
@@ -45,5 +47,7 @@
 		<mapper resource="com/Stream/mapper/xml/heroMapper.xml" />
 		<mapper resource="com/Stream/mapper/xml/skillMapper.xml" />
 		<mapper resource="com/Stream/mapper/xml/noticeMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/carshopMapper.xml" />
+		<mapper resource="com/Stream/mapper/xml/orderMapper.xml" />
 	</mappers>
 </configuration>

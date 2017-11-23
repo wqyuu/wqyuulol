@@ -1,25 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js
-END
-cart.php
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/cart.php
-END
-jquery-1.9.0.min.js
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/jquery-1.9.0.min.js
-END
-ta.js
-K 25
-svn:wc:ra_dav:version-url
-V 56
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/ta.js
+/svn/wqy1011/!svn/ver/33/Stream/src/main/webapp/js
 END
 tvp.player.js
 K 25
@@ -27,11 +9,23 @@ svn:wc:ra_dav:version-url
 V 64
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/tvp.player.js
 END
-Info_new_15282.js
+ta.js
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/Info_new_15282.js
+V 56
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/ta.js
+END
+jquery-1.9.0.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/jquery-1.9.0.min.js
+END
+cart.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/cart.php
 END
 tvp.player_v2_jq.js
 K 25
@@ -39,17 +33,17 @@ svn:wc:ra_dav:version-url
 V 70
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/tvp.player_v2_jq.js
 END
+Info_new_15282.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/Info_new_15282.js
+END
 jquery-1.8.3.min.js
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/jquery-1.8.3.min.js
-END
-forum_viewthread.js
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/forum_viewthread.js
 END
 tujv2.js
 K 25
@@ -57,11 +51,11 @@ svn:wc:ra_dav:version-url
 V 59
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/tujv2.js
 END
-battle.js
+forum_viewthread.js
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/battle.js
+V 70
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/forum_viewthread.js
 END
 tvp.player_v2.js
 K 25
@@ -69,17 +63,23 @@ svn:wc:ra_dav:version-url
 V 67
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/tvp.player_v2.js
 END
-jquery-1.11.3.min.js
+battle.js
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/jquery-1.11.3.min.js
+V 60
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/battle.js
 END
 music.js
 K 25
 svn:wc:ra_dav:version-url
 V 59
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/music.js
+END
+jquery-1.11.3.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/jquery-1.11.3.min.js
 END
 free.js
 K 25
@@ -189,11 +189,11 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/seditor.js
 END
-huati.js
+ping_tcss_ied.js
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/huati.js
+V 67
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/ping_tcss_ied.js
 END
 libs-233df6bcaf.js
 K 25
@@ -201,11 +201,11 @@ svn:wc:ra_dav:version-url
 V 69
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/libs-233df6bcaf.js
 END
-ping_tcss_ied.js
+huati.js
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/ping_tcss_ied.js
+V 59
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/huati.js
 END
 chat.js
 K 25
@@ -225,17 +225,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/impl.min.js
 END
-idangerous.swiper2.7.6.min.js
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/idangerous.swiper2.7.6.min.js
-END
 LOL_MATCH2_TEAM_LIST.js
 K 25
 svn:wc:ra_dav:version-url
 V 74
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/LOL_MATCH2_TEAM_LIST.js
+END
+idangerous.swiper2.7.6.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/idangerous.swiper2.7.6.min.js
 END
 calculator.js
 K 25
@@ -261,29 +261,29 @@ svn:wc:ra_dav:version-url
 V 67
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/cdn_dianjiliu.js
 END
-gg.js
-K 25
-svn:wc:ra_dav:version-url
-V 56
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/gg.js
-END
 views.js
 K 25
 svn:wc:ra_dav:version-url
 V 59
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/views.js
 END
-php52.js
+gg.js
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/php52.js
+V 56
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/gg.js
 END
 videoIndex.js
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/videoIndex.js
+END
+php52.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/php52.js
 END
 data.new.js
 K 25
@@ -303,29 +303,29 @@ svn:wc:ra_dav:version-url
 V 65
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/activeIndex.js
 END
-actual_index_nav.js
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/actual_index_nav.js
-END
 DJC_LOL_HERO_SKIN_MAP.js
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/DJC_LOL_HERO_SKIN_MAP.js
 END
-basegoods.js
+actual_index_nav.js
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/basegoods.js
+V 70
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/actual_index_nav.js
 END
 lib.js
 K 25
 svn:wc:ra_dav:version-url
 V 57
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/lib.js
+END
+basegoods.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/basegoods.js
 END
 index.js
 K 25
@@ -351,23 +351,23 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/template.js
 END
-copyright_tieba.js
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/copyright_tieba.js
-END
 LOL_MATCH2_TEAM_MEMBER_LIST.js
 K 25
 svn:wc:ra_dav:version-url
 V 81
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/LOL_MATCH2_TEAM_MEMBER_LIST.js
 END
-contains.js
+copyright_tieba.js
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/contains.js
+V 69
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/copyright_tieba.js
+END
+topic.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/topic.js
 END
 public.js
 K 25
@@ -375,11 +375,11 @@ svn:wc:ra_dav:version-url
 V 60
 /svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/public.js
 END
-topic.js
+contains.js
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/topic.js
+V 62
+/svn/wqy1011/!svn/ver/27/Stream/src/main/webapp/js/contains.js
 END
 cur-zoomin.cur
 K 25

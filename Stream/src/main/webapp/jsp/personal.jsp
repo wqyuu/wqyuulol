@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page pageEncoding="UTF-8" language="java"  isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <%@ include file="common/head.jsp" %>
@@ -6,7 +7,6 @@
     <script src="../jss/personal.js"></script>
     <title>个人中心</title>
 </head>
-
 <body>
 <%@ include file="common/top.jsp" %>
 <div class="row">
@@ -23,7 +23,8 @@
                 <div class="row setmargin" id="userinfo_3">电话：${user.phone}</div>
                 <div class="row setmargin ">
                     <a href="${pageContext.request.contextPath}/user/update1.do?id=${user.id}">
-                        <button class="setbtnpadding">修改资料</button>
+                        <button class="setbtnpadding" 
+onclick="javaScript:alert('改变就是好事！');" >修改资料</button>
                     </a>
                 </div>
             </div>
@@ -34,7 +35,7 @@
                     <a href="/user/personal">我的个人资料</a>
                 </div>
                 <div class="row ziti_1 setmargin">
-                    <a href="/order/orders">我的订单</a>
+                    <a href="${pageContext.request.contextPath}/jsp/order.jsp" onclick="javaScript:alert('直到世界毁灭之前，这！都是你的资产'); ">我的订单</a>
                 </div>
                 <div class="row ziti_1 setmargin">
                     <a href="/user/updatepassword">修改密码</a>
@@ -49,6 +50,23 @@
             <div class="row">
                 <div class="deletepadding">
                     <ul id="fenleixiangqing">
+                    <c:forEach items="${orderlist}" var="order">
+                      <li>
+                      <div class='row fenleizitiyanse jutiyouxi'>
+	                      <div class='col-md-4'>
+	                      <img src="${order.game.img}" class='imgdx_1'>
+	                      </div>
+	                      <div class='col-md-8'>
+		                        <div class='row youximingzi'>
+		                            ${order.game.name}
+		                        </div>
+			                         <div class='col-md-2 col-md-offset-10'>
+			                         ${order.game.price }
+			                         </div>
+	                         </div>
+                         </div>
+                        <li>
+                    </c:forEach>
                     </ul>
                 </div>
             </div>

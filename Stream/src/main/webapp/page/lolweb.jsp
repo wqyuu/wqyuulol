@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -415,7 +415,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 		<div class="box-nav pr">
 			<div class="nav pr">
 				<p class="c pa" id="yue">
-					<!--<a href="javascript:;">一月</a>
+					<a href="javascript:;">一月</a>
 					 <a href="javascript:;">二月</a>
 					<a href="javascript:;">三月</a>
 					<a href="javascript:;">四月</a>
@@ -424,7 +424,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 					<a href="javascript:;">七月</a>
 					<a href="javascript:;">八月</a>
 					<a href="javascript:;">九月</a>
-					<a href="javascript:;">10月</a> -->
+					<a href="javascript:;">10月</a>
 				</p>
 			</div>
 			<a class="btn-arrow prev sp pa" href="javascript:;"></a>
@@ -946,7 +946,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 				<!-- END -->
 				<!--9月-->
 				<div class="calendar" id="date910">
-					<!-- <table class="tab-week">
+					 <table class="tab-week">
 						<tr>
 							<td>日</td>
 							<td>一</td>
@@ -1098,7 +1098,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 <script src="./js/ping_tcss_ied.js"></script>
 <script src="./js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
-
+/* 
    function ajax(){
      
    $.ajax({
@@ -1166,7 +1166,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 							           }   
 							            date+="<td><em>01</em><p>"+notic[num].lolDates[i].names+"<b>"+notic[num].lolDates[i].status+"</b></p></td>"; 
 							         }    
-						     */
+						    
 			               }
 			                
 			       yue+="<a href='javascript:;'>"+notic[num].id+"</a>";
@@ -1182,7 +1182,7 @@ a,em,i,b{color: inherit;font-style: inherit;font-weight: inherit;_font-style: no
 		});	
  
   
-    }
+    } */
   
    
 </script>

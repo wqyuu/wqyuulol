@@ -3,31 +3,37 @@ package com.Stream.entity;
 public class Admin extends BaseEntity {
 
 	private int Aid;
-	private String Name;
+	private String Aname;
 	private String Apass;
 	
 	public Admin() {
 		super();
 	}
 	
-	public Admin(int aid, String name, String apass) {
+
+	public Admin(int aid, String aname, String apass) {
 		super();
 		Aid = aid;
-		Name = name;
+		Aname = aname;
 		Apass = apass;
 	}
+
+
+	public String getAname() {
+		return Aname;
+	}
+
+
+	public void setAname(String aname) {
+		Aname = aname;
+	}
+
 
 	public int getAid() {
 		return Aid;
 	}
 	public void setAid(int aid) {
 		Aid = aid;
-	}
-	public String getName() {
-		return Name;
-	}
-	public void setName(String name) {
-		Name = name;
 	}
 	public String getApass() {
 		return Apass;

@@ -1,8 +1,8 @@
-log4j.rootLogger=error, stdout, logs
+log4j.rootLogger=INFO
 
 log4j.logger.org.apache.velocity.runtime.log.Log4JLogChute=INFO
 log4j.logger.java.sql=DEBUG
-log4j.logger.org.apache.commons=WARN
+log4j.logger.org.apache.commons=INFO
 
 ### \u8f93\u51fa\u5230\u63a7\u5236\u53f0 ###
 log4j.appender.stdout = org.apache.log4j.ConsoleAppender

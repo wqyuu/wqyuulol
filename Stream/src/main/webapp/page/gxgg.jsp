@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -319,7 +320,7 @@
 								<!-- 15618492027479.jpg -->
 								<span class="author" date="游戏版本7.20"
 									pic="../images/1506404155.jpg" hot="0">${notic.noticUser}<!-- 英雄联盟运营团队 --></span>&#12288;时间：<strong
-									id="infoTime">${notic.noticDate}<!-- 2017-10-16 18:45:19 --></strong>&#12288;|&#12288;字体：【<a
+									id="infoTime"><fmt:formatDate value="${notic.noticDate}" pattern="yyyy-MM-dd"/><!-- 2017-10-16 18:45:19 --></strong>&#12288;|&#12288;字体：【<a
 									class="cgray" href="javascript:zoom(16)">大</a> <a class="cgray"
 									href="javascript:zoom(14)">中</a> <a class="cgray"
 									href="javascript:zoom(12)">小</a>】

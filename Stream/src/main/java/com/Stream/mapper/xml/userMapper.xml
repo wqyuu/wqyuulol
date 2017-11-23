@@ -24,7 +24,9 @@
 	  from st_user u where u.code=#{code}
 	</select>
 	<update id="update" parameterType="User">
-	  update st_user u set u.stat=#{stat} ,u.code=#{code} where  u.id=#{id}
+	  update st_user u set u.stat=#{stat},u.nickname=#{nickname}
+	  ,u.email=#{email},u.phone=#{phone}
+	   where  u.id=#{id}
 	</update>
 	<insert id="addUser" parameterType="User" >
 	   insert into st_user values(null,#{username},#{password},#{nickname},#{email}

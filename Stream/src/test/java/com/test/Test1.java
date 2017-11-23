@@ -4,28 +4,36 @@ import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.Stream.dao.GameDao;
-import com.Stream.dao.KindDao;
-import com.Stream.dao.NoticeDao;
-import com.Stream.dao.UserDao;
-import com.Stream.entity.Hero;
-import com.Stream.entity.Kind;
-import com.Stream.entity.LolNotic;
-import com.Stream.entity.NoticHero;
-import com.Stream.entity.Player;
-import com.Stream.entity.User;
-import com.Stream.service.IPlayerService;
+import com.Stream.entity.Admin;
+import com.Stream.service.imp.AdminServiceImp;
 
 public class Test1 {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicatioinContext.xml");
-		IPlayerService playerService= (IPlayerService) context.getBean("playService");
+		//ApplicationContext context = new ClassPathXmlApplicationContext("applicatioinContext.xml");
+		
+		
+	/*	IPlayerService playerService= (IPlayerService) context.getBean("playService");
 		List<Player> players = playerService.searchPlayerList("红叶小语");
-		System.out.println(players.toString());
-		/*ApplicationContext context = new ClassPathXmlApplicationContext("applicatioinContext.xml");
-		UserDao uDao = (UserDao) context.getBean("userDao");
-		uDao.selectList();
+		System.out.println(players.toString());*/
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicatioinContext.xml");
+		AdminServiceImp cDao = (AdminServiceImp) context.getBean("adminServiceImp");
+		Admin admin=new Admin();
+		admin.setAname("admin");
+		admin.setApass("123");
+		System.out.println(cDao.selectByName(admin).getAname());
+		/*OrderDao cDao = (OrderDao) context.getBean("orderDao");
+		User user=new User();
+		user.setId(1);
+		Order order=new Order();
+		order.setUser(user);
+		 List<Order> oList=cDao.selectByid(order);
+		for (Order order2 : oList) {
+			System.out.println(order2.getGame().getName());
+		}		 */
+		/*UserDao uDao = (UserDao) context.getBean("userDao");
+		User user=new User();
+		user.setUsername("wqy");
+		System.out.println(uDao.selectByName(user).getPassword());
 		System.out.println("ol");*/
 		/*
 		 * NoticeDao nDao=(NoticeDao) context.getBean("noticeDao"); LolNotic

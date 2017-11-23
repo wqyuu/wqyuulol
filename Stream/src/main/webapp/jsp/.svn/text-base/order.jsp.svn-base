@@ -1,4 +1,7 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
+
 <html>
 
 <head>
@@ -27,7 +30,23 @@
                     <br>
                     <div id="myTabContent" class="tab-content">
                         <div id="orderTab" class="tab-content">
-                            <div class="tab-pane fade in active" id="already"></div>
+                            <div class="tab-pane fade in active" id="already">
+                            <table>
+                            <thead id='myThead' style='color: #67c1f5'>
+                            <th width='25%'>序 号</th>
+                            <th width='35%'>总 价</th>
+                            <th width='30%'>下单时间</th>
+                            </thead>
+                            <c:forEach items="${orderlist}" var="order" varStatus="i">
+                            <tbody id='myTbody' style='color:#630'>
+                            <td>${order.id}</td>
+                            <td>${order.price}</td>
+                            <td><fmt:formatDate value="${order.otime}" pattern="yyyy-MM-dd"/>
+                            </td>
+                            </tbody>
+                            </c:forEach>
+                            </table>
+                            </div>
                             <div class="tab-pane fade" id="yet"></div>
                             <div class="tab-pane fade" id="cancel"></div>
                         </div>
